@@ -1,22 +1,43 @@
-# aippt · AI 演示稿生成器
+<h1 align="center">aippt · AI 演示稿生成器</h1>
 
-输入一段 JSON，生成**一套**（25–30 张）风格一致、有叙事线的 `.pptx`——不是一堆互相独立的卡片。
-核心思路：**LLM 负责策划（产出结构化 `DeckSpec`），程序负责稳定输出（确定性渲染成 PPTX）**——同时拿住三件事：风格一致、成本可控、生成速度可控。
+<p align="center">
+输入一段 JSON，生成<b>一套</b>（25–30 张）风格一致、有叙事线的 <code>.pptx</code>——不是一堆互相独立的卡片。
+</p>
+
+<p align="center">
+  <img alt="python" src="https://img.shields.io/badge/python-3.10%2B-blue">
+  <img alt="tests" src="https://img.shields.io/badge/tests-197%20passing-brightgreen">
+  <img alt="typed" src="https://img.shields.io/badge/mypy-strict-2a6db0">
+  <img alt="llm" src="https://img.shields.io/badge/LLM-deepseek%20%7C%20openai%20%7C%20claude-7952b3">
+</p>
+
+> **核心思路**：LLM 负责策划（产出结构化 `DeckSpec`），程序负责稳定输出（确定性渲染成 PPTX）——同时拿住三件事：**风格一致、成本可控、生成速度可控**。
 
 ```json
 { "topic": "主题", "brief": "简介(≤500 字)", "audience": "目标受众" }
 ```
 
+## ✨ 亮点
+
+- 🎯 **风格一致靠程序锁死**：LLM 只产内容，配色 / 布局 / 字号全是 Design Token + 精调 theme preset，杜绝"这页深蓝那页天蓝"。
+- 🌈 **不千篇一律**：8 种演示类型各有主题基调与布局序列，同一套系统、不同长相。
+- 💰 **成本可控**：两段式编排锁定 ~7 次 LLM 调用，真实实测 ≈ **$0.02 / 套**（30 页，见 [DESIGN](DESIGN.md) §5）。
+- 🔌 **多 provider 一键切**：deepseek / openai / claude；默认 `mock` 离线零成本、不联网。
+- 🛟 **优雅降级**：LLM 超时 / 违例自动回退骨架兜底，永不中断出稿。
+- 🧪 **197 项测试全绿**、`mypy` 严格类型、内核零基础设施依赖。
+
 ---
 
-## 使用说明（先看这里）
+## 🚀 使用说明（先看这里）
 
-### 1. 装依赖
+### 1. 装依赖（Python ≥ 3.10）
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt          # 或: pip install -e ".[llm,dev]"
 ```
+
+> 只需标准 Python 环境。`.pptx` 预览图（可选）依赖系统级 **LibreOffice**，缺失会自动跳过、不影响生成。
 
 ### 2. 跑一条命令：吃 JSON 吐 PPTX
 
@@ -32,22 +53,22 @@ python cli.py generate examples/python_intro.json out.pptx \
 一次跑全部 5 套公开开发集：
 
 ```bash
-make demo                       # 默认 mock，离线零成本
+make demo                                 # 默认 mock，离线零成本
 ```
 
 ### 3. 接入真实 LLM（API Key 怎么配）
 
-默认全程走 `MockLLMProvider`，**不配 key 就绝不联网**。要用真实模型生成内容，按下面配好 key 再加 `--provider`：
+默认全程走 `MockLLMProvider`，**不配 key 就绝不联网**。要用真实模型生成内容，配好 key 再加 `--provider`：
 
 ```bash
-cp .env.example .env            # 编辑 .env 填入对应 key（.env 已被 .gitignore，不会进仓）
+cp .env.example .env                      # 编辑 .env 填入对应 key（.env 已被 .gitignore，不进仓）
 ```
 
-`.env` 里填（或直接 `export` 同名环境变量）。支持三家，任选其一：
+`.env` 里填（或直接 `export` 同名环境变量），三家任选其一：
 
 | provider | 需要的环境变量 | 备注 |
 |---|---|---|
-| `deepseek`（**默认推荐**） | `DEEPSEEK_API_KEY` | 原生端点 `https://api.deepseek.com`；中文质感好、页数稳。可选 `DEEPSEEK_BASE_URL` 覆盖端点 |
+| `deepseek` **（默认推荐）** | `DEEPSEEK_API_KEY` | 原生端点 `https://api.deepseek.com`；中文质感好、页数稳。可选 `DEEPSEEK_BASE_URL` 覆盖端点 |
 | `openai` | `OPENAI_API_KEY` | 配 `--model gpt-4o-mini`；成本约低一半 |
 | `anthropic` | `ANTHROPIC_API_KEY` | Claude |
 
@@ -71,9 +92,9 @@ make cli IN=examples/kyoto_weekend.json OUT=out.pptx                    # Makefi
 
 ---
 
-## Demo：预生成样例（直接打开看效果）
+## 📂 Demo：预生成样例（直接打开看效果）
 
-`demos/` 下是 **5 套用 deepseek-chat 真实生成**的产物（`degraded=false`，非 mock 占位），clone 仓库后**无需联网、无需 key**即可直接打开。
+`demos/` 下是 **5 套用 deepseek-chat 真实生成**的产物（`degraded=false`，非 mock 占位），clone 仓库后**无需联网、无需 key** 即可直接打开。
 
 ### 打开路径：`demos/pptx/`
 
@@ -100,7 +121,7 @@ make cli IN=examples/kyoto_weekend.json OUT=out.pptx                    # Makefi
 
 ---
 
-## 这套系统怎么跑（一眼版）
+## 🔧 这套系统怎么跑（一眼版）
 
 ```
 input.json
@@ -114,7 +135,7 @@ input.json
 
 ---
 
-## 目录
+## 🗂 目录
 
 | 路径 | 职责 |
 |---|---|
@@ -125,20 +146,20 @@ input.json
 | `demos/` | 上述 5 套对应的真实产出：`pptx/`（中文名样例）+ `specs/` + `benchmark/` |
 | `docs/` | 设计文档 |
 
-## 工程质量
+## ✅ 工程质量
 
 ```bash
 ruff check .          # lint
-mypy packages         # 类型检查(只查生成内核)
-pytest                # 测试(125 项,覆盖生成内核)
+mypy packages         # 类型检查(严格,只查生成内核)
+pytest                # 197 项,覆盖生成内核与 CLI
 make verify           # 一键:lint + typecheck + test + 5 套 demo
 ```
 
-## 约束
+## 📌 约束
 
 不使用 Gamma / Tome / Beautiful.ai 等一键生成 SaaS；PPTX 由 `python-pptx` + 自研组件库渲染。密钥不进仓（见 `.gitignore` 与 `.env.example`）。
 
-## 文档
+## 📖 文档
 
 | 文档 | 内容 |
 |---|---|
@@ -148,4 +169,3 @@ make verify           # 一键:lint + typecheck + test + 5 套 demo
 | [docs/GENERATION_PIPELINE](docs/GENERATION_PIPELINE.md) | LLM 两段编排 / 结构化输出 / 校验降级 / Benchmark |
 | [docs/RENDERING](docs/RENDERING.md) | 渲染路线 / 组件库 / 文字自适配 / 预览 |
 </content>
-</invoke>
