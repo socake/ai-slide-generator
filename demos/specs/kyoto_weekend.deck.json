@@ -1,0 +1,616 @@
+{
+  "schema_version": "1.0",
+  "id": "deck-7cbd9a71",
+  "title": "周末两天玩遍京都",
+  "topic": "周末两天玩遍京都",
+  "brief": "周六上午到周日晚上,预算人均 3000,希望涵盖经典景点和一两个小众体验",
+  "audience": "第一次去日本的游客",
+  "purpose": "为第一次去日本、时间紧凑的游客提供一份高效、预算可控的京都周末游规划，平衡经典与小众体验。",
+  "deck_type": "travel",
+  "narrative": {
+    "hook": "京都之美，两天也能深度体验。",
+    "conflict": "时间紧张、预算有限、第一次去日本语言不通，如何不踩坑？",
+    "progression": [
+      "行前准备做足功课，交通不迷路",
+      "第一天马不停蹄打卡经典",
+      "第二天放慢脚步感受京都的另一面",
+      "吃好花少，预算控制在3000内",
+      "最后送上实用贴士，旅行更顺畅"
+    ],
+    "resolution": "按此攻略，你将在48小时内收获京都的精华与惊喜。"
+  },
+  "theme": {
+    "id": "travel_warm",
+    "name": "Travel Warm",
+    "mood": [
+      "warm",
+      "relaxed",
+      "wanderlust"
+    ],
+    "palette": {
+      "primary": "#0d9488",
+      "secondary": "#14b8a6",
+      "accent": "#f97316",
+      "background": "#fffaf0",
+      "surface": "#fef3e2",
+      "text": "#1c1917",
+      "text_muted": "#78716c",
+      "border": "#f5e0c8"
+    },
+    "fonts": {
+      "heading": "Noto Sans CJK SC",
+      "body": "Noto Sans CJK SC"
+    },
+    "type_scale": {
+      "display": 54.0,
+      "h1": 36.0,
+      "h2": 24.0,
+      "body": 16.0,
+      "caption": 12.0,
+      "line_height": 1.25
+    },
+    "spacing": {
+      "unit": 0.012,
+      "xs": 0.012,
+      "s": 0.024,
+      "m": 0.04,
+      "l": 0.064,
+      "xl": 0.096
+    },
+    "grid": {
+      "columns": 12,
+      "margin": 0.06,
+      "gutter": 0.02
+    },
+    "shape_style": "rounded",
+    "background_style": "solid",
+    "footer_style": "minimal"
+  },
+  "slides": [
+    {
+      "id": "slide-0",
+      "index": 0,
+      "title": "周末两天玩遍京都",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "cover",
+      "subtitle": "预算人均3000元，经典+小众完美结合，第一次去日本也能轻松上手",
+      "kicker": "京都之美，两天也能深度体验。"
+    },
+    {
+      "id": "slide-1",
+      "index": 1,
+      "title": "行程总览",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "agenda",
+      "items": [
+        "行前准备与交通策略：购买ICOCA卡，下载Google Maps和换乘案内App。",
+        "第一天：经典路线（周六）：伏见稻荷大社、清水寺、二年坂三年坂、祇园。",
+        "第二天：小众体验（周日）：岚山竹林、龙安寺枯山水、锦市场、先斗町。",
+        "美食推荐与预算控制：人均餐饮约300元/天，推荐抹茶甜品和怀石料理。",
+        "实用贴士与注意事项：寺庙关门早，注意着装礼仪，备好零钱。"
+      ]
+    },
+    {
+      "id": "slide-2",
+      "index": 2,
+      "title": "行程总结：48小时京都精华",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "summary",
+      "points": [
+        "周六遵循经典路线，高效打卡伏见稻荷千本鸟居和清水寺等标志性景点，用时紧凑。",
+        "周日转向深度体验，在岚山竹林漫步、龙安寺静坐观石，感受京都的禅意与宁静。",
+        "整体预算可控，包括交通、住宿、门票和餐饮，人均3000元即可享受丰富旅程。"
+      ]
+    },
+    {
+      "id": "slide-3",
+      "index": 3,
+      "title": "行前准备与交通策略",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "出发前必须办好的三件事：交通票、住宿、App，让你一下飞机就顺畅开玩。"
+    },
+    {
+      "id": "slide-4",
+      "index": 4,
+      "title": "必备行前事项",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "提前购买交通卡",
+          "body": "JR Pass或ICOCA卡在机场就能买，ICOCA充值后可直接坐地铁、巴士，省去排队买票时间。",
+          "icon": "speed"
+        },
+        {
+          "title": "预订京都塔附近酒店",
+          "body": "步行5分钟到京都站，方便搭乘JR、近铁和巴士，推荐京都世纪酒店，约800元/晚。",
+          "icon": "goal"
+        },
+        {
+          "title": "下载离线地图与翻译App",
+          "body": "Google Maps提前下载京都离线区域，有道翻译官支持拍照翻译菜单，避免迷路与沟通尴尬。",
+          "icon": "tech"
+        }
+      ]
+    },
+    {
+      "id": "slide-5",
+      "index": 5,
+      "title": "交通卡对比：哪种最划算？",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "ICOCA卡（Suica类似）",
+        "points": [
+          "随用随充，余额可退，适合只坐几趟地铁或巴士的短途游。",
+          "京都地铁单程约210日元，一天坐3次以内不如巴士券划算。"
+        ]
+      },
+      "right": {
+        "heading": "京都一日巴士券 & JR Pass",
+        "points": [
+          "一日巴士券600日元无限次，覆盖祇园、清水寺等经典景点，一天坐4次就回本。",
+          "JR Pass（7天约29600日元）需跨城如去大阪、奈良才值得买，单玩京都别买。"
+        ]
+      }
+    },
+    {
+      "id": "slide-6",
+      "index": 6,
+      "title": "住宿推荐：性价比之选",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "祇园附近：方便夜游",
+          "body": "步行至花见小路和八坂神社，夜晚感受和风氛围，推荐祇园赛莱斯廷酒店，约1200元/晚。",
+          "icon": "time"
+        },
+        {
+          "title": "京都站周边：交通枢纽",
+          "body": "直达机场巴士和所有景点，适合早出晚归的行程，如京都塔酒店标间约600元/晚。",
+          "icon": "goal"
+        },
+        {
+          "title": "民宿体验：更地道的选择",
+          "body": "在Airbnb预订町屋民宿，体验榻榻米和茶道，价格约500元/晚，需提前2周预订。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-7",
+      "index": 7,
+      "title": "第一天：经典路线（周六）",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "如何在抵达当日下午高效串联京都三大地标？"
+    },
+    {
+      "id": "slide-8",
+      "index": 8,
+      "title": "周六行程地图概览",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "按时间顺序串联三个核心区域，能最大化利用下午到傍晚的黄金时段。",
+      "support": "实测从伏见稻荷大社到清水寺地铁+公交仅需30分钟，步行衔接顺利。"
+    },
+    {
+      "id": "slide-9",
+      "index": 9,
+      "title": "伏见稻荷大社打卡指南",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "最佳拍照时间",
+          "body": "下午3点前阳光斜射千本鸟居，能拍出光影交错的纵深感，游客也相对较少。",
+          "icon": "time"
+        },
+        {
+          "title": "登山策略",
+          "body": "爬到半山腰的熊鹰社即可折返，全程约40分钟，节省体力给后续景点。",
+          "icon": "goal"
+        },
+        {
+          "title": "必吃小食",
+          "body": "参道旁「稻荷茶屋」的抹茶冰淇淋（300日元）和狐狸煎饼值得一试。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-10",
+      "index": 10,
+      "title": "清水寺路线步行流程",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "从清水坂上山",
+          "desc": "经过热闹的伴手礼商店街，约10分钟步行至仁王门，沿途可试吃八桥饼。"
+        },
+        {
+          "title": "参观本堂与舞台",
+          "desc": "本堂悬空舞台是京都标志，可俯瞰市区；地主神社求恋爱运，排队约15分钟。"
+        },
+        {
+          "title": "下山至祇园",
+          "desc": "沿三年坂、二年坂石板路下行，两侧传统建筑与特产店，步行20分钟即达祇园。"
+        }
+      ]
+    },
+    {
+      "id": "slide-11",
+      "index": 11,
+      "title": "祇园与花见小路夜游",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "偶遇艺伎时机",
+          "body": "傍晚5点半至7点艺伎从茶屋前往宴席，花见小路南段相遇概率最高。",
+          "icon": "time"
+        },
+        {
+          "title": "晚餐推荐",
+          "body": "花见小路「十二段家」的寿喜锅套餐约4000日元，需提前一天预约。",
+          "icon": "idea"
+        },
+        {
+          "title": "夜游彩蛋",
+          "body": "八坂神社夜间灯笼点亮至21点，免费入场，可顺路欣赏西楼门夜景。",
+          "icon": "launch"
+        }
+      ]
+    },
+    {
+      "id": "slide-12",
+      "index": 12,
+      "title": "第二天：小众体验与深度游（周日）",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 2,
+      "subtitle": "避开人潮，探索岚山、金阁寺的宁静之美，下午体验和果子制作或茶道"
+    },
+    {
+      "id": "slide-13",
+      "index": 13,
+      "title": "周日行程亮点：岚山+金阁寺",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "周日的岚山和金阁寺在清晨人少时，能让你真正感受千年古都的禅意。",
+      "support": "岚山竹林清晨7点游客不足百人，而午后可达数千人。"
+    },
+    {
+      "id": "slide-14",
+      "index": 14,
+      "title": "岚山竹林与天龙寺",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "早晨7点前往可避开人群",
+          "body": "此时竹林内几乎没有其他游客，能独享风吹竹叶的沙沙声，拍照也无需排队等待。",
+          "icon": "time"
+        },
+        {
+          "title": "天龙寺庭院值得慢慢逛",
+          "body": "曹源池庭园借景岚山，是梦窗疏石设计的国宝级枯山水，绕行一圈约需40分钟。",
+          "icon": "quality"
+        },
+        {
+          "title": "乘坐小火车至龟冈站返回",
+          "body": "嵯峨野观光小火车单程约25分钟，保津峡风光绝佳，龟冈站下车后可乘JR回到岚山。",
+          "icon": "travel"
+        }
+      ]
+    },
+    {
+      "id": "slide-15",
+      "index": 15,
+      "title": "金阁寺：一睹金箔建筑",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "门票400日元，性价比高",
+          "body": "作为世界文化遗产，门票仅400日元，折合人民币约20元，远低于国内同类景点。",
+          "icon": "cost"
+        },
+        {
+          "title": "30分钟可游览完毕",
+          "body": "金阁寺景区不大，入口到出口单向游览，慢走加上拍照通常半小时足够。",
+          "icon": "time"
+        },
+        {
+          "title": "镜湖池倒影是经典机位",
+          "body": "在镜湖池边拍摄金阁与倒影的对称照，是每个游客的必打卡角度，建议上午光线柔和时拍。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-16",
+      "index": 16,
+      "title": "小众体验：和果子制作教室",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "需提前预约，费用约3000日元",
+          "body": "大多教室可通过官网或电话预约，费用含材料费，约3000日元（约150元人民币）。",
+          "icon": "process"
+        },
+        {
+          "title": "90分钟课程，可带走作品",
+          "body": "从揉面到塑形全程指导，每人可制作2-3个和果子，用精美盒子打包带走。",
+          "icon": "idea"
+        },
+        {
+          "title": "位于祇园附近，方便前往",
+          "body": "教室集中在祇园、东山一带，距离八坂神社步行10分钟，适合作为下午活动。",
+          "icon": "location"
+        }
+      ]
+    },
+    {
+      "id": "slide-17",
+      "index": 17,
+      "title": "美食推荐与预算控制",
+      "speaker_notes": "本章将带大家了解如何在京都以合理预算尽享美食，从预算分配到隐藏小店一网打尽。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "人均3000预算如何分配，解锁必吃美食与省钱技巧"
+    },
+    {
+      "id": "slide-18",
+      "index": 18,
+      "title": "预算分配表",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "data",
+      "metrics": [
+        {
+          "value": "1000",
+          "label": "住宿（每晚）",
+          "delta": "可控制在800-1200"
+        },
+        {
+          "value": "300",
+          "label": "餐饮（每日）",
+          "delta": "含三餐及小吃"
+        },
+        {
+          "value": "200",
+          "label": "交通（两天）",
+          "delta": "巴士一日券+单程票"
+        },
+        {
+          "value": "200",
+          "label": "门票与小费",
+          "delta": "主要寺庙及零用"
+        }
+      ],
+      "note": "总预算约2400元，预留600元机动，人均3000元足够覆盖精华体验。"
+    },
+    {
+      "id": "slide-19",
+      "index": 19,
+      "title": "京都必吃美食清单",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "抹茶甜品",
+          "body": "中村藤吉本店的抹茶芭菲（约1200日元），口感浓郁，是京都抹茶代表。",
+          "icon": "quality"
+        },
+        {
+          "title": "京料理怀石",
+          "body": "午间套餐（约3000日元）比晚市便宜一半，需提前一天预订才能省预算。",
+          "icon": "cost"
+        },
+        {
+          "title": "拉面",
+          "body": "一兰拉面（约890日元）或当地小店如新福菜馆，用500日元就能吃饱。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-20",
+      "index": 20,
+      "title": "省钱技巧与隐藏小店",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "便利店解决早餐",
+          "body": "7-11或全家饭团+咖啡约300日元，比餐厅节省50%以上。",
+          "icon": "cost"
+        },
+        {
+          "title": "寺庙周边平价食堂",
+          "body": "清水寺附近的「奥丹」汤豆腐套餐（1500日元）比景区外便宜30%。",
+          "icon": "idea"
+        },
+        {
+          "title": "晚上8点后超市打折",
+          "body": "Life超市便当、寿司半价起，花500日元就能享受豪华晚餐。",
+          "icon": "time"
+        }
+      ]
+    },
+    {
+      "id": "slide-21",
+      "index": 21,
+      "title": "实用贴士与注意事项",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 5,
+      "subtitle": "如何像本地人一样玩转京都？这章涵盖文化礼仪、安全应急和购物退税，助你无忧旅行。"
+    },
+    {
+      "id": "slide-22",
+      "index": 22,
+      "title": "日本文化礼仪须知",
+      "speaker_notes": "强调这些细节能避免尴尬，让旅行更顺畅。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "寺庙脱鞋",
+          "body": "进入寺庙和传统茶室前，请在玄关处脱鞋，并整齐摆放在指定区域，避免穿着鞋踩踏榻榻米。",
+          "icon": "idea"
+        },
+        {
+          "title": "禁止边走边吃",
+          "body": "在商店街或寺庙内，请勿边走边吃食物，建议在店铺附近站定吃完或带回酒店享用，以示尊重。",
+          "icon": "risk"
+        },
+        {
+          "title": "关闭闪光灯",
+          "body": "在寺庙、神社及美术馆内拍照时务必关闭闪光灯，部分区域禁止拍摄，请留意指示牌。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-23",
+      "index": 23,
+      "title": "安全与应急信息",
+      "speaker_notes": "这些准备能应对大多数突发情况，让旅行更安心。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "保存大使馆电话",
+          "body": "出行前请将中国驻日本大使馆（03-3403-3064）及当地紧急电话（110/119）存入手机，并告知家人行程。",
+          "icon": "security"
+        },
+        {
+          "title": "购买旅行保险",
+          "body": "建议购买涵盖医疗、行李丢失和行程延误的旅行保险，部分保险还包含紧急救援服务，费用约200元起。",
+          "icon": "risk"
+        },
+        {
+          "title": "下载离线地图",
+          "body": "日本部分区域网络信号弱，提前下载Google Maps或MAPS.ME离线地图，并用日语标注酒店和景点。",
+          "icon": "data"
+        }
+      ]
+    },
+    {
+      "id": "slide-24",
+      "index": 24,
+      "title": "购物与退税指南",
+      "speaker_notes": "提醒游客随身携带护照，并注意退税办理时间。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "满额即可退税",
+          "body": "在同一店铺消费满5000日元（约240元人民币）即可享受10%消费税退税，需出示护照并填写退税单。",
+          "icon": "cost"
+        },
+        {
+          "title": "必买推荐",
+          "body": "抹茶制品（如伊藤久右卫门抹茶粉）、京友禅手工制品、清水烧陶瓷都是极具京都特色的伴手礼。",
+          "icon": "idea"
+        },
+        {
+          "title": "一站式购物",
+          "body": "京都站伊势丹百货汇集各大品牌和特产，B1层美食街可试吃，退税柜台在中层，非常方便。",
+          "icon": "time"
+        }
+      ]
+    },
+    {
+      "id": "slide-25",
+      "index": 25,
+      "title": "祝你旅途愉快！",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "closing",
+      "subtitle": "出发前准备充分，旅途更顺畅。",
+      "cta": "提前兑换日元，出发前再次确认交通，享受京都的每一个瞬间。"
+    }
+  ]
+}

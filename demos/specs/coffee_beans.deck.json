@@ -1,0 +1,736 @@
+{
+  "schema_version": "1.0",
+  "id": "deck-255cc6b0",
+  "title": "如何挑选一款适合自己的咖啡豆",
+  "topic": "如何挑选一款适合自己的咖啡豆",
+  "brief": "从烘焙度、产地、处理法、风味描述讲起,给一个挑豆决策框架",
+  "audience": "咖啡新手",
+  "purpose": "帮助咖啡新手建立系统化的选豆知识框架，从烘焙度、产地、处理法、风味描述四个维度入手，最终能应用决策框架独立选择适合自己的咖啡豆。",
+  "deck_type": "teaching",
+  "narrative": {
+    "hook": "面对货架上琳琅满目的咖啡豆，你是不是常常无从下手？",
+    "conflict": "没有系统的选豆知识，只能靠包装颜值或店员推荐，买回来却常常踩雷。",
+    "progression": [
+      "先打基础，明白咖啡豆的类别和新鲜度的重要性",
+      "深入烘焙度，这是决定风味的大方向",
+      "再看出身——产地和处理法共同塑造风味细节",
+      "最后学会解读包装上的风味描述，避免被营销话术迷惑",
+      "汇总成一套简单的决策框架，让你每次都能选到对味的豆子"
+    ],
+    "resolution": "从此面对咖啡豆再也不迷茫，轻松选出让自己满意的风味。"
+  },
+  "theme": {
+    "id": "teaching",
+    "name": "Teaching Clean",
+    "mood": [
+      "clean",
+      "friendly",
+      "approachable"
+    ],
+    "palette": {
+      "primary": "#2563eb",
+      "secondary": "#1d4ed8",
+      "accent": "#f59e0b",
+      "background": "#ffffff",
+      "surface": "#f1f5f9",
+      "text": "#0f172a",
+      "text_muted": "#64748b",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Noto Sans CJK SC",
+      "body": "Noto Sans CJK SC"
+    },
+    "type_scale": {
+      "display": 54.0,
+      "h1": 36.0,
+      "h2": 24.0,
+      "body": 16.0,
+      "caption": 12.0,
+      "line_height": 1.25
+    },
+    "spacing": {
+      "unit": 0.012,
+      "xs": 0.012,
+      "s": 0.024,
+      "m": 0.04,
+      "l": 0.064,
+      "xl": 0.096
+    },
+    "grid": {
+      "columns": 12,
+      "margin": 0.06,
+      "gutter": 0.02
+    },
+    "shape_style": "rounded",
+    "background_style": "solid",
+    "footer_style": "minimal"
+  },
+  "slides": [
+    {
+      "id": "slide-0",
+      "index": 0,
+      "title": "如何挑选一款适合自己的咖啡豆",
+      "speaker_notes": "开场欢迎，介绍今天的主题和目标。",
+      "layout_id": "cover-layout",
+      "asset_hint": "coffee-beans-in-hopper.jpg",
+      "emphasis": "high",
+      "type": "cover",
+      "subtitle": "从新手到入门，只需掌握四个核心维度",
+      "kicker": "告别盲买，开启有谱的选豆之旅"
+    },
+    {
+      "id": "slide-1",
+      "index": 1,
+      "title": "今天的内容安排",
+      "speaker_notes": "快速浏览议程，让听众知道将学到的内容。",
+      "layout_id": "agenda-layout",
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "agenda",
+      "items": [
+        "咖啡豆基础：种类、新鲜度与保存",
+        "烘焙度：从浅烘到深烘的风味演变",
+        "产地与处理法：不同地域的特色",
+        "风味描述与包装标签：教你读懂",
+        "选豆决策框架：三步找到你的豆",
+        "总结与Q&A"
+      ]
+    },
+    {
+      "id": "slide-2",
+      "index": 2,
+      "title": "总结",
+      "speaker_notes": "回顾关键要点，强调实践的重要性。",
+      "layout_id": "summary-layout",
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "summary",
+      "points": [
+        "选豆四维度：烘焙度、产地、处理法、风味描述是核心决策依据。",
+        "新鲜度优先于一切，整豆比预磨粉更能保留香气至少一个月。",
+        "利用“三步走”决策框架——确定烘焙偏好、选择产地风味、对照标签验证。",
+        "多尝试不同产区与处理法的咖啡，并记录感官笔记，逐步建立个人咖啡审美库。"
+      ]
+    },
+    {
+      "id": "slide-3",
+      "index": 3,
+      "title": "咖啡豆基础：了解你杯中的世界",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "为什么新手需要先了解咖啡豆基础知识？因为只有了解咖啡豆的品种、新鲜度和形态，才能避免盲目选择，找到真正适合自己的风味。"
+    },
+    {
+      "id": "slide-4",
+      "index": 4,
+      "title": "两大咖啡豆种：阿拉比卡 vs 罗布斯塔",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "阿拉比卡",
+          "body": "风味丰富、酸度柔和、咖啡因较低（约占咖啡因总量0.8-1.2%），是精品咖啡的主力，全球产量约60-70%。",
+          "icon": "quality"
+        },
+        {
+          "title": "罗布斯塔",
+          "body": "苦味重、咖啡因含量高（约2-3%），抗病虫害强，常用于速溶咖啡和商业拼配，风味较粗糙。",
+          "icon": "risk"
+        },
+        {
+          "title": "优先选择100%阿拉比卡",
+          "body": "新手入门建议从100%阿拉比卡豆开始，例如埃塞俄比亚耶加雪菲或哥伦比亚蕙兰，体验花果香与酸质。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-5",
+      "index": 5,
+      "title": "咖啡豆新鲜度：为什么重要？",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "最佳赏味期",
+          "body": "咖啡豆烘焙后2-14天是风味巅峰，香气和酸质最活泼；超过一个月香气明显衰减，出现陈味。",
+          "icon": "time"
+        },
+        {
+          "title": "烘焙日期更重要",
+          "body": "包装袋上的烘焙日期比保质期更可靠，购买时务必查看；未开封的豆子需在三个月内使用。",
+          "icon": "data"
+        },
+        {
+          "title": "避免预磨咖啡粉",
+          "body": "研磨后表面积增大，香气在15分钟内流失过半；整豆保存，喝前现磨最能保留风味。",
+          "icon": "speed"
+        }
+      ]
+    },
+    {
+      "id": "slide-6",
+      "index": 6,
+      "title": "咖啡豆保存要点",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "避光密封常温",
+          "body": "阳光、高温和氧气是咖啡豆三大天敌，密封避光常温保存可使风味延长2-3周。",
+          "icon": "security"
+        },
+        {
+          "title": "切忌放入冰箱",
+          "body": "冰箱内湿度和异味会导致咖啡豆吸附水分和杂味，解冻时冷凝水加速品质劣化。",
+          "icon": "risk"
+        },
+        {
+          "title": "分装小份密封",
+          "body": "将一周用量分装入带有单向排气阀的小袋，减少反复开盖氧化，每次取用不浪费。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-7",
+      "index": 7,
+      "title": "常见咖啡豆形态：整豆、粉、挂耳",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "整豆",
+          "body": "最适合新手，风味保留好，可根据自身喜好调整研磨度，新鲜度可控，推荐入门首选。",
+          "icon": "growth"
+        },
+        {
+          "title": "咖啡粉",
+          "body": "方便快捷但风味衰减快，适合办公室或时间紧迫场景，建议两周内用完并密封保存。",
+          "icon": "speed"
+        },
+        {
+          "title": "挂耳包",
+          "body": "出差旅行便利选择，独立包装保鲜，但风味不及现磨，适合尝鲜或临时需求。",
+          "icon": "launch"
+        }
+      ]
+    },
+    {
+      "id": "slide-8",
+      "index": 8,
+      "title": "2. 烘焙度：决定风味基调",
+      "speaker_notes": "烘焙度是影响咖啡风味的最关键因素之一，通过控制烘焙时间与温度，咖啡豆内部发生复杂的化学反应，从而产生不同的酸度、苦度和甜度表现。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 2,
+      "subtitle": "烘焙度如何改变咖啡豆的酸、甜、苦？"
+    },
+    {
+      "id": "slide-9",
+      "index": 9,
+      "title": "浅烘焙：酸质明亮，花香果香突出",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "原始风味",
+          "body": "烘焙时间短，保留更多咖啡生豆的原始花果香气和活泼酸质，常见柠檬、莓果、茉莉花等风味。",
+          "icon": "growth"
+        },
+        {
+          "title": "口感特点",
+          "body": "酸度明亮，苦度极低，口感清爽如茶，适合喜欢酸度、追求清新口感的人群。",
+          "icon": "idea"
+        },
+        {
+          "title": "冲泡建议",
+          "body": "推荐用手冲方式，水温控制在90-92℃之间，充分萃取香气物质，避免过萃导致涩感。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-10",
+      "index": 10,
+      "title": "中烘焙：平衡的酸甜与醇厚度",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "风味平衡",
+          "body": "酸苦均衡，坚果、焦糖、可可风味常见，是市面上最普适的烘焙度，适合多数新手入门。",
+          "icon": "quality"
+        },
+        {
+          "title": "冲泡兼容",
+          "body": "兼容性极强，手冲、法压、意式浓缩均可表现出良好风味，是家庭和咖啡馆常用选择。",
+          "icon": "process"
+        },
+        {
+          "title": "水温建议",
+          "body": "建议冲泡水温92-94℃，根据研磨度适当调整，萃取时间约2-3分钟。",
+          "icon": "time"
+        }
+      ]
+    },
+    {
+      "id": "slide-11",
+      "index": 11,
+      "title": "深烘焙：醇厚苦甜，巧克力感强",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "风味特征",
+          "body": "酸度极低，苦味和焦糖甜突出，常见黑巧克力、烤坚果、焦糖风味，醇厚度高。",
+          "icon": "cost"
+        },
+        {
+          "title": "适用场景",
+          "body": "适合加奶制作拿铁、卡布奇诺，或喜欢重口味、浓郁咖啡感的爱好者。",
+          "icon": "idea"
+        },
+        {
+          "title": "冲泡建议",
+          "body": "推荐意式浓缩或法压壶冲泡，水温93-96℃，研磨度偏细，萃取油脂更丰富。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-12",
+      "index": 12,
+      "title": "烘焙度风味对比",
+      "speaker_notes": "中烘焙是中间的平衡点：酸度⭐⭐、苦度⭐⭐、甜度⭐⭐⭐。新手建议从浅到深依次尝试，找到自己最偏好的风味方向。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "浅烘焙",
+        "points": [
+          "酸度：⭐⭐⭐ 明亮活泼，如柠檬与青苹果",
+          "苦度：⭐ 几乎无苦味",
+          "甜度：⭐⭐ 细腻的果甜，非焦糖甜"
+        ]
+      },
+      "right": {
+        "heading": "深烘焙",
+        "points": [
+          "酸度：⭐ 几乎感受不到酸",
+          "苦度：⭐⭐⭐ 强烈的苦味与焦香",
+          "甜度：⭐⭐ 浓郁的焦糖与黑巧克力甜"
+        ]
+      }
+    },
+    {
+      "id": "slide-13",
+      "index": 13,
+      "title": "3. 产地与处理法：风味的源头",
+      "speaker_notes": "接下来我们进入核心内容，了解产地和处理法如何塑造咖啡风味。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "section",
+      "section_number": 3,
+      "subtitle": "不同产地的咖啡豆风味有何差异？处理法如何影响口感？"
+    },
+    {
+      "id": "slide-14",
+      "index": 14,
+      "title": "核心产地产区概览",
+      "speaker_notes": "全球咖啡产区主要分布在三大区域，每个产区都有典型风味特征。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "非洲：花香果酸",
+          "body": "埃塞俄比亚的耶加雪菲以茉莉花香和柑橘酸闻名，肯尼亚则有强烈的莓果酸和乌梅风味，适合喜欢明亮酸质的人。",
+          "icon": "growth"
+        },
+        {
+          "title": "中南美洲：均衡坚果",
+          "body": "哥伦比亚咖啡常带有坚果、焦糖和均衡的酸度，巴西以巧克力和坚果调性为主，醇厚顺滑，是大众最熟悉的风味。",
+          "icon": "quality"
+        },
+        {
+          "title": "亚洲：草药香料醇厚",
+          "body": "印尼苏门答腊的曼特宁有草本、香料和厚重醇感，云南咖啡呈现茶感、坚果和柔和果酸，风味内敛。",
+          "icon": "idea"
+        },
+        {
+          "title": "新手推荐",
+          "body": "哥伦比亚和埃塞俄比亚的咖啡风味鲜明且接受度高，适合初次探索单品咖啡的人选择。",
+          "icon": "goal"
+        }
+      ]
+    },
+    {
+      "id": "slide-15",
+      "index": 15,
+      "title": "处理法：从咖啡果到咖啡豆的步骤",
+      "speaker_notes": "处理法是影响咖啡风味的第二大因素，决定了干净度、甜度和复杂度。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "日晒处理",
+          "body": "将完整咖啡果直接晾晒，果肉发酵带入甜感，风味浓郁复杂，常带有热带水果和发酵感，适合喜欢醇厚口感的人。",
+          "icon": "process"
+        },
+        {
+          "title": "水洗处理",
+          "body": "去除果肉后发酵洗净，咖啡豆干净明亮，酸度活泼，风味纯粹，能清晰展现产地本身的风土特色。",
+          "icon": "quality"
+        },
+        {
+          "title": "蜜处理",
+          "body": "保留部分果胶层晾晒，甜度介于日晒和水洗之间，body 中等，风味上能同时感受到果酸和甜感。",
+          "icon": "idea"
+        },
+        {
+          "title": "特殊处理法",
+          "body": "如酒桶发酵、厌氧发酵等，通过额外工艺创造独特风味，但风味可能两极分化，建议有一定品鉴经验再尝试。",
+          "icon": "risk"
+        }
+      ]
+    },
+    {
+      "id": "slide-16",
+      "index": 16,
+      "title": "常见处理法风味对比",
+      "speaker_notes": "通过对比可以直观感受不同处理法的风味差异。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "日晒 vs 水洗",
+        "points": [
+          "日晒：复杂度高，甜感强，body厚，风味像水果炸弹",
+          "水洗：干净明亮，酸度活泼，body清亮，能喝到清晰的花香果酸"
+        ]
+      },
+      "right": {
+        "heading": "蜜处理 vs 新手推荐",
+        "points": [
+          "蜜处理：甜感明显，body介于两者之间，酸甜平衡",
+          "新手推荐：先水洗，再尝试日晒，逐步探索风味复杂度"
+        ]
+      }
+    },
+    {
+      "id": "slide-17",
+      "index": 17,
+      "title": "产地+处理法组合示例",
+      "speaker_notes": "实际购买时，产地和处理法组合决定了最终风味，这里给出几个典型例子。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "埃塞俄比亚 耶加雪菲 水洗",
+          "body": "经典柑橘和茉莉花香，口感干净明亮，是入门非洲豆的首选，几乎不会出错。",
+          "icon": "idea"
+        },
+        {
+          "title": "哥伦比亚 蕙兰 蜜处理",
+          "body": "焦糖甜感与莓果酸交融，酸甜平衡，body顺滑，展示蜜处理的魅力。",
+          "icon": "quality"
+        },
+        {
+          "title": "苏门答腊 林东 湿刨法",
+          "body": "草药、香料风味，醇厚度高，适合喜欢重口感和独特风味的进阶者。",
+          "icon": "risk"
+        },
+        {
+          "title": "新手推荐组合",
+          "body": "埃塞水洗和哥伦比亚蜜处理是两种风格迥异但都很友好的选择，建议对比品鉴。",
+          "icon": "goal"
+        }
+      ]
+    },
+    {
+      "id": "slide-18",
+      "index": 18,
+      "title": "4. 风味描述与包装标签：读懂咖啡的语言",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 4,
+      "subtitle": "包装上的风味描述是营销还是真实？如何辨别？"
+    },
+    {
+      "id": "slide-19",
+      "index": 19,
+      "title": "常见风味描述词汇解析",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "酸度",
+          "body": "优质酸用“明亮”“活泼”形容，如耶加雪菲的柠檬酸，避免“尖锐”或“刺激”的酸。",
+          "icon": "quality"
+        },
+        {
+          "title": "甜感",
+          "body": "常见的甜感描述有焦糖、蜂蜜、巧克力、太妃糖等，通常与烘焙度相关。",
+          "icon": "growth"
+        },
+        {
+          "title": "醇厚度",
+          "body": "从轻盈如茶到厚重如奶油，对应不同口感，如曼特宁醇厚、瑰夏轻盈。",
+          "icon": "compare"
+        },
+        {
+          "title": "余韵",
+          "body": "风味在口中停留时间长短，好的余韵可持续数十秒且令人愉悦。",
+          "icon": "time"
+        }
+      ]
+    },
+    {
+      "id": "slide-20",
+      "index": 20,
+      "title": "包装标签上必看的信息",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "烘焙日期",
+          "body": "最核心信息，咖啡豆最佳风味期在烘焙后7-30天内，越新鲜越好。",
+          "icon": "time"
+        },
+        {
+          "title": "产地信息",
+          "body": "包含国家、产区、庄园等，如埃塞俄比亚·耶加雪菲·果丁丁，有助于追溯品质。",
+          "icon": "idea"
+        },
+        {
+          "title": "处理法与烘焙度",
+          "body": "水洗、日晒、蜜处理等影响风味；浅中烘焙保留花果香，深烘焙偏苦醇。",
+          "icon": "process"
+        },
+        {
+          "title": "风味描述",
+          "body": "仅供参考，如“蓝莓、茉莉花”，需自行体验，同一批次可能风味不同。",
+          "icon": "risk"
+        }
+      ]
+    },
+    {
+      "id": "slide-21",
+      "index": 21,
+      "title": "如何避免被“风味描述”误导？",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "风味描述是商家的最佳猜测",
+          "body": "并非绝对，受批次、烘焙师主观影响，同一支豆不同批次风味描述可能变化。",
+          "icon": "risk"
+        },
+        {
+          "title": "烘焙和冲煮会改变风味",
+          "body": "同一支豆子，中浅烘焙和深烘焙风味截然不同，冲煮参数也影响萃取。",
+          "icon": "process"
+        },
+        {
+          "title": "多喝多比较培养味觉记忆",
+          "body": "建议每周尝试1-2种不同产区或处理法的咖啡，对比记录风味差异。",
+          "icon": "growth"
+        },
+        {
+          "title": "相信自己的舌头",
+          "body": "包装上写“蓝莓”你喝不到，不必气馁；你觉得好喝就是好豆。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-22",
+      "index": 22,
+      "title": "核心原则：风味描述是引路牌，不是终点",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "风味描述引导你尝试，但不承诺100%还原，经验积累才是关键。",
+      "support": "调查显示，超过60%的新手咖啡爱好者曾因喝不出描述风味而怀疑自己，但坚持品鉴后能辨识出更丰富的层次。"
+    },
+    {
+      "id": "slide-23",
+      "index": 23,
+      "title": "选豆决策框架：三步找到你的豆",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 5,
+      "subtitle": "一个简单易行的决策流程，让新手也能自信选豆"
+    },
+    {
+      "id": "slide-24",
+      "index": 24,
+      "title": "第一步：确定烘焙度",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "偏好匹配",
+          "desc": "爱喝黑咖啡选浅中烘（酸香明亮），爱加奶选深烘（醇厚苦甜），无偏好从中度烘焙开始探索。"
+        },
+        {
+          "title": "小份试错",
+          "desc": "每次买100-200g小包装，避免囤积不喜欢的豆子造成浪费，同时多试几种风格。"
+        },
+        {
+          "title": "步骤3",
+          "desc": null
+        }
+      ]
+    },
+    {
+      "id": "slide-25",
+      "index": 25,
+      "title": "第二步：选择产地产区",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "选国家",
+          "desc": "从大众认知度高的产区入手，如哥伦比亚（均衡坚果）或埃塞俄比亚（花果香），降低踩雷风险。"
+        },
+        {
+          "title": "看包装",
+          "desc": "优先标注单一产地（如“哥伦比亚蕙兰”）而非拼配，更容易追溯到风味特征。"
+        },
+        {
+          "title": "步骤3",
+          "desc": null
+        }
+      ]
+    },
+    {
+      "id": "slide-26",
+      "index": 26,
+      "title": "第三步：挑选处理法",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "按风味选",
+          "desc": "水洗处理法口感干净酸质明亮，日晒法甜感足、热带水果风味明显，蜜处理介于两者之间。"
+        },
+        {
+          "title": "优先水洗",
+          "desc": "新手从水洗开始最安全，风味稳定且瑕疵率低；同时记录每款豆的信息，逐步建立喜好档案。"
+        },
+        {
+          "title": "步骤3",
+          "desc": null
+        }
+      ]
+    },
+    {
+      "id": "slide-27",
+      "index": 27,
+      "title": "决策框架总结图",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "三步流程",
+          "body": "选烘焙度 → 选产地 → 选处理法，按顺序执行即可覆盖选豆核心变量，无需同时纠结所有因素。",
+          "icon": "process"
+        },
+        {
+          "title": "单一变量法",
+          "body": "每次只改变一个步骤（如保持产地换烘焙度），便于对比学习不同参数对风味的真实影响。",
+          "icon": "compare"
+        },
+        {
+          "title": "记录与验证",
+          "body": "记录喝到的香气、酸度、余韵等，与包装袋上的风味描述对照，逐步提升自己的品鉴与选豆能力。",
+          "icon": "idea"
+        },
+        {
+          "title": "勇敢尝试",
+          "body": "咖啡风味没有绝对对错，大胆尝试不同组合，享受探索未知风味的乐趣，每次试错都是进步。",
+          "icon": "growth"
+        }
+      ]
+    },
+    {
+      "id": "slide-28",
+      "index": 28,
+      "title": "下一步行动",
+      "speaker_notes": "鼓励听众立即行动，提供具体步骤和方向。",
+      "layout_id": "closing-layout",
+      "asset_hint": "person-enjoying-coffee.jpg",
+      "emphasis": "high",
+      "type": "closing",
+      "subtitle": "立即动手，将知识转化为体验",
+      "cta": "去附近的咖啡店或线上平台，选一款感兴趣的豆子，按照今天学到的框架分析它，准备一杯时间，用心品尝并记录感受，享受探索咖啡风味的旅程吧！"
+    }
+  ]
+}
