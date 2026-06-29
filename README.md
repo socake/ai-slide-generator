@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://ppt.vishine.top/"><img alt="live demo" src="https://img.shields.io/badge/live_demo-online-success"></a>
   <img alt="python" src="https://img.shields.io/badge/python-3.10%2B-blue">
   <img alt="tests" src="https://img.shields.io/badge/tests-197%20passing-brightgreen">
   <img alt="typed" src="https://img.shields.io/badge/mypy-strict-2a6db0">
@@ -25,6 +26,17 @@
 - 🔌 **多 provider 一键切**：deepseek / openai / claude；默认 `mock` 离线零成本、不联网。
 - 🛟 **优雅降级**：LLM 超时 / 违例自动回退骨架兜底，永不中断出稿。
 - 🧪 **197 项测试全绿**、`mypy` 严格类型、内核零基础设施依赖。
+
+---
+
+## 🌐 线上演示
+
+本仓库是**生成内核 + CLI**；作者在此基础上扩展开发了一个**线上产品**，把同一套生成能力封装成可在浏览器直接体验的 Web 应用（输入主题 → 在线生成 / 预览 → 导出 `.pptx`）。
+
+- 🔗 **体验地址**：<https://ppt.vishine.top/>
+- 🔑 **登录凭据**：另行私下提供（不放进公有仓，避免被滥用）。
+
+> 关系说明：CLI（本仓）是核心生成引擎，线上产品是它之上的 Web 封装与扩展，两者共用同一套 `Plan → Compose → 确定性渲染` 内核。建议结合看：**仓库代码体现工程与设计取舍，线上 demo 体现成品效果。**
 
 ---
 
