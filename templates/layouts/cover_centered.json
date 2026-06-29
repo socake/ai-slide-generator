@@ -1,0 +1,10 @@
+{
+  "id": "cover_centered",
+  "slide_type": "cover",
+  "name": "Cover Centered",
+  "slots": {
+    "kicker": {"name": "kicker", "kind": "text", "rect": {"left": 0.15, "top": 0.34, "width": 0.7, "height": 0.06}, "font_role": "caption", "color_role": "accent", "align": "center"},
+    "title": {"name": "title", "kind": "text", "rect": {"left": 0.1, "top": 0.42, "width": 0.8, "height": 0.22}, "font_role": "display", "align": "center", "valign": "bottom"},
+    "subtitle": {"name": "subtitle", "kind": "text", "rect": {"left": 0.15, "top": 0.67, "width": 0.7, "height": 0.1}, "font_role": "h2", "color_role": "text_muted", "align": "center"}
+  }
+}

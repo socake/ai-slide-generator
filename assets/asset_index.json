@@ -1,0 +1,48 @@
+{
+  "assets": [
+    {
+      "object_key": "backgrounds/clean_blue.jpg",
+      "asset_type": "background",
+      "domain_tags": ["tech", "education", "python", "business"],
+      "mood_tags": ["clean", "friendly", "calm", "approachable"],
+      "color_tags": ["blue", "white"],
+      "best_slide_types": ["cover", "section"],
+      "safe_area": {"left": 0.06, "top": 0.3, "width": 0.88, "height": 0.5},
+      "needs_overlay": true,
+      "overlay_opacity": 0.25
+    },
+    {
+      "object_key": "backgrounds/exec_dark.jpg",
+      "asset_type": "background",
+      "domain_tags": ["business", "finance", "strategy"],
+      "mood_tags": ["serious", "executive", "premium", "dark"],
+      "color_tags": ["dark", "navy"],
+      "best_slide_types": ["cover", "section"],
+      "safe_area": {"left": 0.06, "top": 0.32, "width": 0.88, "height": 0.46},
+      "needs_overlay": false,
+      "overlay_opacity": 0.0
+    },
+    {
+      "object_key": "backgrounds/warm_gradient.jpg",
+      "asset_type": "background",
+      "domain_tags": ["consumer", "lifestyle", "food", "travel"],
+      "mood_tags": ["warm", "lively", "inviting"],
+      "color_tags": ["orange", "amber"],
+      "best_slide_types": ["cover", "section"],
+      "safe_area": {"left": 0.06, "top": 0.3, "width": 0.88, "height": 0.5},
+      "needs_overlay": true,
+      "overlay_opacity": 0.2
+    },
+    {
+      "object_key": "backgrounds/neutral_soft.jpg",
+      "asset_type": "background",
+      "domain_tags": ["general"],
+      "mood_tags": ["neutral", "balanced", "calm"],
+      "color_tags": ["gray", "white"],
+      "best_slide_types": ["cover", "section"],
+      "safe_area": {"left": 0.06, "top": 0.3, "width": 0.88, "height": 0.5},
+      "needs_overlay": false,
+      "overlay_opacity": 0.0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "section",
+  "slide_type": "section",
+  "name": "Section Divider",
+  "slots": {
+    "section_no": {"name": "section_no", "kind": "text", "rect": {"left": 0.06, "top": 0.28, "width": 0.3, "height": 0.2}, "font_role": "display", "color_role": "accent"},
+    "title": {"name": "title", "kind": "text", "rect": {"left": 0.06, "top": 0.52, "width": 0.56, "height": 0.18}, "font_role": "h1"},
+    "subtitle": {"name": "subtitle", "kind": "text", "rect": {"left": 0.06, "top": 0.71, "width": 0.56, "height": 0.1}, "font_role": "h2", "color_role": "text_muted"}
+  }
+}

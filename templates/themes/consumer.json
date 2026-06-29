@@ -1,0 +1,19 @@
+{
+  "id": "consumer",
+  "name": "Warm Consumer",
+  "mood": ["warm", "lively", "inviting"],
+  "palette": {
+    "primary": "#ea580c",
+    "secondary": "#f97316",
+    "accent": "#16a34a",
+    "background": "#fffaf5",
+    "surface": "#fff1e6",
+    "text": "#1c1917",
+    "text_muted": "#78716c",
+    "border": "#f0e0d2"
+  },
+  "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+  "shape_style": "pill",
+  "background_style": "solid",
+  "footer_style": "minimal"
+}

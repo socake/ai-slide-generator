@@ -1,0 +1,19 @@
+{
+  "id": "teaching",
+  "name": "Teaching Clean",
+  "mood": ["clean", "friendly", "approachable"],
+  "palette": {
+    "primary": "#2563eb",
+    "secondary": "#1d4ed8",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "surface": "#f1f5f9",
+    "text": "#0f172a",
+    "text_muted": "#64748b",
+    "border": "#e2e8f0"
+  },
+  "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+  "shape_style": "rounded",
+  "background_style": "solid",
+  "footer_style": "minimal"
+}

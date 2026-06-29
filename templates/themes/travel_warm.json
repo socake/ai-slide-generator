@@ -1,0 +1,19 @@
+{
+  "id": "travel_warm",
+  "name": "Travel Warm",
+  "mood": ["warm", "relaxed", "wanderlust"],
+  "palette": {
+    "primary": "#0d9488",
+    "secondary": "#14b8a6",
+    "accent": "#f97316",
+    "background": "#fffaf0",
+    "surface": "#fef3e2",
+    "text": "#1c1917",
+    "text_muted": "#78716c",
+    "border": "#f5e0c8"
+  },
+  "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+  "shape_style": "rounded",
+  "background_style": "solid",
+  "footer_style": "minimal"
+}

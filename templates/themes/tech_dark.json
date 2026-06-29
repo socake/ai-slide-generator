@@ -1,0 +1,20 @@
+{
+  "id": "tech_dark",
+  "name": "Tech Dark",
+  "mood": ["technical", "modern", "focused", "dark"],
+  "palette": {
+    "primary": "#22d3ee",
+    "secondary": "#0ea5e9",
+    "accent": "#a78bfa",
+    "background": "#0a0f1e",
+    "surface": "#111a2e",
+    "text": "#e2e8f0",
+    "text_muted": "#94a3b8",
+    "border": "#1e293b"
+  },
+  "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+  "type_scale": { "display": 54, "h1": 36, "h2": 24, "body": 16, "caption": 12, "line_height": 1.25 },
+  "shape_style": "sharp",
+  "background_style": "solid",
+  "footer_style": "minimal"
+}

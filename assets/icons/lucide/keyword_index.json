@@ -1,0 +1,1547 @@
+{
+  "3d": [
+    "box"
+  ],
+  "academy": [
+    "book"
+  ],
+  "account": [
+    "wrench"
+  ],
+  "achievement": [
+    "award",
+    "trophy"
+  ],
+  "action": [
+    "workflow"
+  ],
+  "admin": [
+    "shield",
+    "lock"
+  ],
+  "agreement": [
+    "handshake"
+  ],
+  "alarm": [
+    "clock",
+    "bell"
+  ],
+  "alert": [
+    "triangle-alert"
+  ],
+  "analytics": [
+    "chart-column"
+  ],
+  "antivirus": [
+    "shield"
+  ],
+  "architecture": [
+    "layers"
+  ],
+  "archive": [
+    "package"
+  ],
+  "armored": [
+    "shield"
+  ],
+  "armoured": [
+    "shield"
+  ],
+  "army": [
+    "shield"
+  ],
+  "assistance": [
+    "handshake"
+  ],
+  "attention": [
+    "flag"
+  ],
+  "audit": [
+    "shield"
+  ],
+  "authentication": [
+    "key"
+  ],
+  "author": [
+    "book"
+  ],
+  "automation": [
+    "workflow"
+  ],
+  "award": [
+    "award",
+    "trophy"
+  ],
+  "badge": [
+    "award"
+  ],
+  "balance": [
+    "scale"
+  ],
+  "banner": [
+    "flag"
+  ],
+  "battle": [
+    "shield"
+  ],
+  "bell": [
+    "bell"
+  ],
+  "birthdate": [
+    "calendar"
+  ],
+  "birthday": [
+    "calendar"
+  ],
+  "block": [
+    "shield"
+  ],
+  "book": [
+    "book"
+  ],
+  "booklet": [
+    "book"
+  ],
+  "bookmark": [
+    "star"
+  ],
+  "boost": [
+    "rocket"
+  ],
+  "box": [
+    "box",
+    "package"
+  ],
+  "branch": [
+    "git-branch"
+  ],
+  "bravery": [
+    "shield"
+  ],
+  "bright": [
+    "lightbulb"
+  ],
+  "browser": [
+    "globe",
+    "compass"
+  ],
+  "budget": [
+    "wallet"
+  ],
+  "build": [
+    "wrench"
+  ],
+  "bullseye": [
+    "target"
+  ],
+  "business": [
+    "handshake"
+  ],
+  "bytes": [
+    "database"
+  ],
+  "cadet": [
+    "shield"
+  ],
+  "calendar": [
+    "calendar"
+  ],
+  "camera": [
+    "zap"
+  ],
+  "cards": [
+    "heart"
+  ],
+  "cash": [
+    "coins"
+  ],
+  "celebration": [
+    "trophy"
+  ],
+  "chain": [
+    "link"
+  ],
+  "champion": [
+    "trophy"
+  ],
+  "chart": [
+    "chart-column"
+  ],
+  "chart-column": [
+    "chart-column"
+  ],
+  "chat": [
+    "message-square"
+  ],
+  "check": [
+    "circle-check"
+  ],
+  "chip": [
+    "cpu"
+  ],
+  "ci": [
+    "workflow"
+  ],
+  "circle": [
+    "circle-check"
+  ],
+  "circle-check": [
+    "circle-check"
+  ],
+  "circuit": [
+    "cpu"
+  ],
+  "clock": [
+    "clock"
+  ],
+  "cloud": [
+    "server",
+    "cloud"
+  ],
+  "code": [
+    "git-branch",
+    "code",
+    "git-compare"
+  ],
+  "cog": [
+    "settings"
+  ],
+  "coins": [
+    "coins"
+  ],
+  "college": [
+    "book"
+  ],
+  "column": [
+    "chart-column"
+  ],
+  "comment": [
+    "message-square"
+  ],
+  "compare": [
+    "scale",
+    "git-compare"
+  ],
+  "compass": [
+    "compass"
+  ],
+  "complete": [
+    "circle-check"
+  ],
+  "component": [
+    "puzzle"
+  ],
+  "computer": [
+    "cpu"
+  ],
+  "connection": [
+    "workflow"
+  ],
+  "construction": [
+    "wrench"
+  ],
+  "container": [
+    "database",
+    "box",
+    "package"
+  ],
+  "continuous integration": [
+    "workflow"
+  ],
+  "conversation": [
+    "message-square"
+  ],
+  "cooperation": [
+    "handshake"
+  ],
+  "copies": [
+    "layers"
+  ],
+  "copy": [
+    "layers"
+  ],
+  "cores": [
+    "cpu"
+  ],
+  "cost": [
+    "coins"
+  ],
+  "cpu": [
+    "cpu"
+  ],
+  "crest": [
+    "shield"
+  ],
+  "cube": [
+    "box"
+  ],
+  "cybersecurity": [
+    "shield"
+  ],
+  "danger": [
+    "triangle-alert"
+  ],
+  "dashboard": [
+    "gauge"
+  ],
+  "data": [
+    "file-text",
+    "database"
+  ],
+  "database": [
+    "database"
+  ],
+  "date": [
+    "calendar"
+  ],
+  "deadline": [
+    "target"
+  ],
+  "deal": [
+    "handshake"
+  ],
+  "decision": [
+    "scale"
+  ],
+  "defence": [
+    "shield"
+  ],
+  "defender": [
+    "shield"
+  ],
+  "defense": [
+    "shield"
+  ],
+  "delivery": [
+    "package"
+  ],
+  "detection": [
+    "shield"
+  ],
+  "devops": [
+    "workflow"
+  ],
+  "diagram": [
+    "chart-column"
+  ],
+  "dial": [
+    "gauge"
+  ],
+  "dialog": [
+    "message-square"
+  ],
+  "diff": [
+    "git-compare"
+  ],
+  "direction": [
+    "compass"
+  ],
+  "directory": [
+    "folder"
+  ],
+  "discover": [
+    "search"
+  ],
+  "display": [
+    "eye"
+  ],
+  "diy": [
+    "wrench"
+  ],
+  "document": [
+    "file-text"
+  ],
+  "documentation": [
+    "book"
+  ],
+  "done": [
+    "circle-check"
+  ],
+  "drop": [
+    "map-pin"
+  ],
+  "east": [
+    "compass"
+  ],
+  "edit": [
+    "settings"
+  ],
+  "education": [
+    "book"
+  ],
+  "effect": [
+    "sparkles"
+  ],
+  "electricity": [
+    "zap"
+  ],
+  "email": [
+    "send"
+  ],
+  "emotion": [
+    "heart",
+    "thumbs-up"
+  ],
+  "energy": [
+    "zap"
+  ],
+  "enlarge": [
+    "search"
+  ],
+  "ethics": [
+    "scale"
+  ],
+  "event": [
+    "calendar"
+  ],
+  "exclamation mark": [
+    "triangle-alert"
+  ],
+  "explore": [
+    "search"
+  ],
+  "expose": [
+    "eye"
+  ],
+  "eye": [
+    "eye"
+  ],
+  "fair": [
+    "scale"
+  ],
+  "favorite": [
+    "star"
+  ],
+  "feedback": [
+    "message-square"
+  ],
+  "fiction": [
+    "book"
+  ],
+  "file": [
+    "file-text"
+  ],
+  "file-text": [
+    "file-text"
+  ],
+  "filter": [
+    "filter",
+    "sparkles"
+  ],
+  "finance": [
+    "coins",
+    "wallet"
+  ],
+  "find": [
+    "shield",
+    "search"
+  ],
+  "flag": [
+    "flag"
+  ],
+  "flash": [
+    "zap"
+  ],
+  "fob": [
+    "key"
+  ],
+  "folder": [
+    "folder"
+  ],
+  "foot soldier": [
+    "shield"
+  ],
+  "friendship": [
+    "handshake"
+  ],
+  "gamble": [
+    "coins"
+  ],
+  "gauge": [
+    "gauge"
+  ],
+  "gear": [
+    "settings"
+  ],
+  "geometry": [
+    "box"
+  ],
+  "ghz": [
+    "cpu"
+  ],
+  "gigahertz": [
+    "cpu"
+  ],
+  "git": [
+    "git-branch",
+    "git-compare"
+  ],
+  "git-branch": [
+    "git-branch"
+  ],
+  "git-compare": [
+    "git-compare"
+  ],
+  "globe": [
+    "globe"
+  ],
+  "goal": [
+    "flag",
+    "target"
+  ],
+  "good": [
+    "thumbs-up"
+  ],
+  "graph": [
+    "chart-column"
+  ],
+  "group": [
+    "users"
+  ],
+  "growth": [
+    "trending-up"
+  ],
+  "guardian": [
+    "shield"
+  ],
+  "handshake": [
+    "handshake"
+  ],
+  "heart": [
+    "heart"
+  ],
+  "high school": [
+    "book"
+  ],
+  "homework": [
+    "book"
+  ],
+  "html": [
+    "code"
+  ],
+  "idea": [
+    "lightbulb"
+  ],
+  "infantry": [
+    "shield"
+  ],
+  "information": [
+    "book"
+  ],
+  "invincibility": [
+    "shield"
+  ],
+  "invincible": [
+    "shield"
+  ],
+  "invulnerable": [
+    "shield"
+  ],
+  "isometric": [
+    "box"
+  ],
+  "judge": [
+    "scale"
+  ],
+  "justice": [
+    "scale"
+  ],
+  "key": [
+    "key"
+  ],
+  "key ring": [
+    "key"
+  ],
+  "keychain": [
+    "key"
+  ],
+  "knight": [
+    "shield"
+  ],
+  "knowledge": [
+    "book"
+  ],
+  "language": [
+    "globe"
+  ],
+  "launch": [
+    "rocket"
+  ],
+  "law": [
+    "scale"
+  ],
+  "layers": [
+    "layers"
+  ],
+  "leaflet": [
+    "book"
+  ],
+  "learning": [
+    "book"
+  ],
+  "legal": [
+    "scale"
+  ],
+  "lens": [
+    "search"
+  ],
+  "level": [
+    "gauge"
+  ],
+  "library": [
+    "book"
+  ],
+  "license": [
+    "scale"
+  ],
+  "lightbulb": [
+    "lightbulb"
+  ],
+  "lightning": [
+    "zap"
+  ],
+  "lights": [
+    "lightbulb"
+  ],
+  "like": [
+    "star",
+    "heart",
+    "thumbs-up"
+  ],
+  "link": [
+    "link"
+  ],
+  "linter": [
+    "triangle-alert"
+  ],
+  "locate": [
+    "search"
+  ],
+  "location": [
+    "map-pin"
+  ],
+  "lock": [
+    "lock"
+  ],
+  "login": [
+    "key"
+  ],
+  "logo": [
+    "target"
+  ],
+  "love": [
+    "heart"
+  ],
+  "magazine": [
+    "book"
+  ],
+  "magic": [
+    "sparkles"
+  ],
+  "magnifier": [
+    "search"
+  ],
+  "magnifying glass": [
+    "search"
+  ],
+  "mail": [
+    "send"
+  ],
+  "map": [
+    "map-pin"
+  ],
+  "map-pin": [
+    "map-pin"
+  ],
+  "marker": [
+    "flag",
+    "map-pin"
+  ],
+  "market": [
+    "globe"
+  ],
+  "measure": [
+    "gauge",
+    "scale"
+  ],
+  "memory": [
+    "database",
+    "cpu"
+  ],
+  "message": [
+    "message-square",
+    "send"
+  ],
+  "message-square": [
+    "message-square"
+  ],
+  "meter": [
+    "gauge"
+  ],
+  "metric": [
+    "chart-column"
+  ],
+  "metrics": [
+    "chart-column"
+  ],
+  "milestone": [
+    "flag"
+  ],
+  "military": [
+    "shield"
+  ],
+  "module": [
+    "puzzle",
+    "package"
+  ],
+  "money": [
+    "coins",
+    "wallet"
+  ],
+  "month": [
+    "calendar"
+  ],
+  "network": [
+    "network",
+    "workflow"
+  ],
+  "night": [
+    "sparkles"
+  ],
+  "node": [
+    "workflow"
+  ],
+  "north": [
+    "compass"
+  ],
+  "notice": [
+    "flag"
+  ],
+  "notification": [
+    "flag",
+    "bell"
+  ],
+  "novel": [
+    "book"
+  ],
+  "overview": [
+    "target"
+  ],
+  "package": [
+    "box",
+    "package"
+  ],
+  "packed": [
+    "package"
+  ],
+  "pages": [
+    "layers"
+  ],
+  "pamphlet": [
+    "book"
+  ],
+  "paper aeroplane": [
+    "send"
+  ],
+  "paper airplane": [
+    "send"
+  ],
+  "paperback": [
+    "book"
+  ],
+  "paperwork": [
+    "layers"
+  ],
+  "part": [
+    "puzzle"
+  ],
+  "partnership": [
+    "handshake"
+  ],
+  "password": [
+    "lock",
+    "key"
+  ],
+  "pawn": [
+    "shield"
+  ],
+  "pdf": [
+    "file-text"
+  ],
+  "people": [
+    "users"
+  ],
+  "performance": [
+    "gauge"
+  ],
+  "piece": [
+    "puzzle"
+  ],
+  "pile": [
+    "layers"
+  ],
+  "pin": [
+    "map-pin"
+  ],
+  "pipeline": [
+    "workflow"
+  ],
+  "playing": [
+    "heart"
+  ],
+  "pocket": [
+    "wallet"
+  ],
+  "pot": [
+    "database"
+  ],
+  "power": [
+    "zap"
+  ],
+  "preferences": [
+    "settings"
+  ],
+  "pressure": [
+    "gauge"
+  ],
+  "prevention": [
+    "shield"
+  ],
+  "preview": [
+    "eye"
+  ],
+  "prize": [
+    "award",
+    "trophy"
+  ],
+  "process": [
+    "workflow"
+  ],
+  "processor": [
+    "cpu"
+  ],
+  "productivity": [
+    "target"
+  ],
+  "programming": [
+    "code"
+  ],
+  "projects": [
+    "target"
+  ],
+  "protection": [
+    "shield"
+  ],
+  "puzzle": [
+    "puzzle"
+  ],
+  "quality": [
+    "award"
+  ],
+  "quick": [
+    "zap"
+  ],
+  "ram": [
+    "cpu"
+  ],
+  "rating": [
+    "star"
+  ],
+  "read": [
+    "eye"
+  ],
+  "reading": [
+    "book"
+  ],
+  "release": [
+    "rocket"
+  ],
+  "reminder": [
+    "bell"
+  ],
+  "report": [
+    "flag",
+    "file-text"
+  ],
+  "repository": [
+    "git-branch"
+  ],
+  "research": [
+    "book"
+  ],
+  "reveal": [
+    "eye"
+  ],
+  "review": [
+    "star"
+  ],
+  "right": [
+    "scale"
+  ],
+  "risk": [
+    "triangle-alert"
+  ],
+  "rocket": [
+    "rocket"
+  ],
+  "rosette": [
+    "award"
+  ],
+  "rule": [
+    "scale"
+  ],
+  "safari": [
+    "compass"
+  ],
+  "safety": [
+    "shield"
+  ],
+  "scale": [
+    "scale"
+  ],
+  "scan": [
+    "shield",
+    "search"
+  ],
+  "schedule": [
+    "calendar"
+  ],
+  "scout": [
+    "shield"
+  ],
+  "script": [
+    "book"
+  ],
+  "sealed": [
+    "package"
+  ],
+  "search": [
+    "search"
+  ],
+  "secure": [
+    "shield",
+    "lock",
+    "key"
+  ],
+  "security": [
+    "lock",
+    "shield"
+  ],
+  "see": [
+    "eye"
+  ],
+  "send": [
+    "send"
+  ],
+  "server": [
+    "server"
+  ],
+  "servers": [
+    "database"
+  ],
+  "settings": [
+    "settings",
+    "wrench"
+  ],
+  "sheets": [
+    "layers"
+  ],
+  "shield": [
+    "shield"
+  ],
+  "show": [
+    "eye"
+  ],
+  "signal": [
+    "flag"
+  ],
+  "sound": [
+    "bell"
+  ],
+  "source": [
+    "code"
+  ],
+  "south": [
+    "compass"
+  ],
+  "space": [
+    "rocket"
+  ],
+  "spanner": [
+    "wrench"
+  ],
+  "sparkles": [
+    "sparkles"
+  ],
+  "specs": [
+    "cpu"
+  ],
+  "speech bubble": [
+    "message-square"
+  ],
+  "speed": [
+    "gauge",
+    "zap"
+  ],
+  "sports": [
+    "trophy"
+  ],
+  "square": [
+    "message-square"
+  ],
+  "stack": [
+    "layers"
+  ],
+  "star": [
+    "star"
+  ],
+  "stars": [
+    "sparkles"
+  ],
+  "statistics": [
+    "trending-up",
+    "chart-column"
+  ],
+  "storage": [
+    "database",
+    "server",
+    "box",
+    "package"
+  ],
+  "story": [
+    "book"
+  ],
+  "strategy": [
+    "compass"
+  ],
+  "strength": [
+    "shield"
+  ],
+  "strong": [
+    "shield"
+  ],
+  "student": [
+    "book"
+  ],
+  "study": [
+    "book"
+  ],
+  "submit": [
+    "send"
+  ],
+  "suit": [
+    "heart"
+  ],
+  "system": [
+    "settings"
+  ],
+  "target": [
+    "target"
+  ],
+  "task": [
+    "circle-check"
+  ],
+  "team": [
+    "users"
+  ],
+  "tech": [
+    "cpu"
+  ],
+  "technology": [
+    "cpu"
+  ],
+  "terms": [
+    "handshake"
+  ],
+  "text": [
+    "file-text"
+  ],
+  "threat": [
+    "shield"
+  ],
+  "thumbs": [
+    "thumbs-up"
+  ],
+  "thumbs-up": [
+    "thumbs-up"
+  ],
+  "tick": [
+    "circle-check"
+  ],
+  "time": [
+    "clock"
+  ],
+  "tin": [
+    "database"
+  ],
+  "todo": [
+    "circle-check"
+  ],
+  "tome": [
+    "book"
+  ],
+  "tool": [
+    "wrench"
+  ],
+  "toolbox": [
+    "wrench"
+  ],
+  "tough": [
+    "shield"
+  ],
+  "tradeoff": [
+    "scale"
+  ],
+  "translate": [
+    "globe"
+  ],
+  "tree": [
+    "network"
+  ],
+  "trending": [
+    "trending-up"
+  ],
+  "trending-up": [
+    "trending-up"
+  ],
+  "triangle": [
+    "triangle-alert"
+  ],
+  "triangle-alert": [
+    "triangle-alert"
+  ],
+  "trooper": [
+    "shield"
+  ],
+  "trophy": [
+    "trophy"
+  ],
+  "txt": [
+    "file-text"
+  ],
+  "undamaged": [
+    "shield"
+  ],
+  "undelivered": [
+    "package"
+  ],
+  "union": [
+    "handshake"
+  ],
+  "university": [
+    "book"
+  ],
+  "unlock": [
+    "key"
+  ],
+  "unopened": [
+    "package"
+  ],
+  "up": [
+    "trending-up",
+    "thumbs-up"
+  ],
+  "url": [
+    "link"
+  ],
+  "users": [
+    "users"
+  ],
+  "vcs": [
+    "git-branch"
+  ],
+  "verification": [
+    "shield"
+  ],
+  "version": [
+    "rocket"
+  ],
+  "version control": [
+    "git-branch",
+    "git-compare"
+  ],
+  "victory": [
+    "trophy"
+  ],
+  "view": [
+    "eye"
+  ],
+  "vigilance": [
+    "shield"
+  ],
+  "vigilant": [
+    "shield"
+  ],
+  "visibility": [
+    "eye"
+  ],
+  "visible": [
+    "eye"
+  ],
+  "vision": [
+    "eye"
+  ],
+  "wallet": [
+    "wallet"
+  ],
+  "war": [
+    "shield"
+  ],
+  "warning": [
+    "triangle-alert",
+    "flag"
+  ],
+  "watch": [
+    "clock",
+    "eye"
+  ],
+  "waypoint": [
+    "map-pin"
+  ],
+  "weather": [
+    "cloud"
+  ],
+  "weight": [
+    "scale"
+  ],
+  "west": [
+    "compass"
+  ],
+  "winner": [
+    "award",
+    "trophy"
+  ],
+  "work": [
+    "target"
+  ],
+  "workflow": [
+    "workflow"
+  ],
+  "world": [
+    "globe"
+  ],
+  "wrench": [
+    "wrench"
+  ],
+  "writer": [
+    "book"
+  ],
+  "writing": [
+    "book"
+  ],
+  "written": [
+    "book"
+  ],
+  "xml": [
+    "code"
+  ],
+  "year": [
+    "calendar"
+  ],
+  "zap": [
+    "zap"
+  ],
+  "zip": [
+    "package"
+  ],
+  "zoom": [
+    "search"
+  ],
+  "上升": [
+    "trending-up"
+  ],
+  "上线": [
+    "rocket"
+  ],
+  "业绩": [
+    "trending-up"
+  ],
+  "云": [
+    "cloud"
+  ],
+  "亮点": [
+    "sparkles"
+  ],
+  "人群": [
+    "users"
+  ],
+  "代码": [
+    "code"
+  ],
+  "保障": [
+    "shield"
+  ],
+  "全球": [
+    "globe"
+  ],
+  "分析": [
+    "chart-column"
+  ],
+  "创新": [
+    "lightbulb"
+  ],
+  "协作": [
+    "users"
+  ],
+  "反馈": [
+    "message-square"
+  ],
+  "发布": [
+    "rocket"
+  ],
+  "受众": [
+    "users"
+  ],
+  "合作": [
+    "handshake"
+  ],
+  "启动": [
+    "rocket"
+  ],
+  "周期": [
+    "calendar"
+  ],
+  "商业": [
+    "handshake"
+  ],
+  "团队": [
+    "users"
+  ],
+  "国际": [
+    "globe"
+  ],
+  "增长": [
+    "trending-up"
+  ],
+  "奖项": [
+    "trophy"
+  ],
+  "存储": [
+    "database"
+  ],
+  "安全": [
+    "shield"
+  ],
+  "完成": [
+    "circle-check"
+  ],
+  "客户": [
+    "users"
+  ],
+  "对比": [
+    "git-compare"
+  ],
+  "对照": [
+    "git-compare"
+  ],
+  "层级": [
+    "layers"
+  ],
+  "工具": [
+    "wrench"
+  ],
+  "市场": [
+    "globe"
+  ],
+  "开发": [
+    "code"
+  ],
+  "快速": [
+    "zap"
+  ],
+  "性能": [
+    "gauge"
+  ],
+  "想法": [
+    "lightbulb"
+  ],
+  "愿景": [
+    "eye"
+  ],
+  "成就": [
+    "trophy"
+  ],
+  "成本": [
+    "coins"
+  ],
+  "成果": [
+    "trophy"
+  ],
+  "战略": [
+    "compass"
+  ],
+  "技术": [
+    "cpu"
+  ],
+  "报告": [
+    "file-text"
+  ],
+  "指标": [
+    "chart-column"
+  ],
+  "挑战": [
+    "triangle-alert"
+  ],
+  "探索": [
+    "compass"
+  ],
+  "提升": [
+    "trending-up"
+  ],
+  "搜索": [
+    "search"
+  ],
+  "收入": [
+    "coins"
+  ],
+  "效率": [
+    "zap"
+  ],
+  "数据": [
+    "database"
+  ],
+  "整合": [
+    "puzzle"
+  ],
+  "文档": [
+    "file-text"
+  ],
+  "方向": [
+    "compass"
+  ],
+  "日程": [
+    "calendar"
+  ],
+  "时间": [
+    "clock"
+  ],
+  "服务器": [
+    "server"
+  ],
+  "权衡": [
+    "scale"
+  ],
+  "架构": [
+    "layers"
+  ],
+  "查找": [
+    "search"
+  ],
+  "模块": [
+    "puzzle"
+  ],
+  "步骤": [
+    "workflow"
+  ],
+  "比较": [
+    "git-compare"
+  ],
+  "沟通": [
+    "message-square"
+  ],
+  "流程": [
+    "workflow"
+  ],
+  "灵感": [
+    "sparkles"
+  ],
+  "特色": [
+    "sparkles"
+  ],
+  "用户": [
+    "users"
+  ],
+  "目标": [
+    "target"
+  ],
+  "确认": [
+    "circle-check"
+  ],
+  "算法": [
+    "cpu"
+  ],
+  "系统": [
+    "settings"
+  ],
+  "统计": [
+    "chart-column"
+  ],
+  "维护": [
+    "wrench"
+  ],
+  "网络": [
+    "network"
+  ],
+  "营收": [
+    "coins"
+  ],
+  "规划": [
+    "compass"
+  ],
+  "解决": [
+    "wrench"
+  ],
+  "计划": [
+    "calendar"
+  ],
+  "认可": [
+    "thumbs-up"
+  ],
+  "设置": [
+    "settings"
+  ],
+  "质量": [
+    "award"
+  ],
+  "费用": [
+    "coins"
+  ],
+  "趋势": [
+    "trending-up"
+  ],
+  "进度": [
+    "clock"
+  ],
+  "连接": [
+    "link"
+  ],
+  "选择": [
+    "scale"
+  ],
+  "通知": [
+    "bell"
+  ],
+  "通过": [
+    "circle-check"
+  ],
+  "速度": [
+    "zap"
+  ],
+  "配置": [
+    "settings"
+  ],
+  "里程碑": [
+    "flag"
+  ],
+  "重点": [
+    "flag"
+  ],
+  "防护": [
+    "shield"
+  ],
+  "集成": [
+    "link"
+  ],
+  "预算": [
+    "wallet"
+  ],
+  "预警": [
+    "triangle-alert"
+  ],
+  "风险": [
+    "triangle-alert"
+  ],
+  "验证": [
+    "circle-check"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "comparison",
+  "slide_type": "comparison",
+  "name": "Comparison Two-Column",
+  "slots": {
+    "title": {"name": "title", "kind": "text", "rect": {"left": 0.06, "top": 0.08, "width": 0.88, "height": 0.13}, "font_role": "h1"},
+    "left.heading": {"name": "left.heading", "kind": "text", "rect": {"left": 0.06, "top": 0.26, "width": 0.42, "height": 0.08}, "font_role": "h2"},
+    "left.points": {"name": "left.points", "kind": "list", "rect": {"left": 0.06, "top": 0.36, "width": 0.42, "height": 0.5}, "font_role": "body"},
+    "right.heading": {"name": "right.heading", "kind": "text", "rect": {"left": 0.52, "top": 0.26, "width": 0.42, "height": 0.08}, "font_role": "h2"},
+    "right.points": {"name": "right.points", "kind": "list", "rect": {"left": 0.52, "top": 0.36, "width": 0.42, "height": 0.5}, "font_role": "body"},
+    "vs": {"name": "vs", "kind": "text", "rect": {"left": 0.44, "top": 0.55, "width": 0.12, "height": 0.1}, "font_role": "h1", "color_role": "accent", "align": "center"}
+  }
+}

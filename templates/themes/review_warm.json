@@ -1,0 +1,19 @@
+{
+  "id": "review_warm",
+  "name": "Review Warm",
+  "mood": ["warm", "reflective", "cozy", "nostalgic"],
+  "palette": {
+    "primary": "#9a6a4f",
+    "secondary": "#7c5240",
+    "accent": "#3f6b52",
+    "background": "#fbf6ee",
+    "surface": "#f3ead9",
+    "text": "#2b2018",
+    "text_muted": "#7a6a58",
+    "border": "#e7d8c2"
+  },
+  "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+  "shape_style": "rounded",
+  "background_style": "solid",
+  "footer_style": "minimal"
+}

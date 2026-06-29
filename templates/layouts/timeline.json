@@ -1,0 +1,10 @@
+{
+  "id": "timeline",
+  "slide_type": "timeline",
+  "name": "Timeline",
+  "slots": {
+    "title": {"name": "title", "kind": "text", "rect": {"left": 0.06, "top": 0.08, "width": 0.88, "height": 0.13}, "font_role": "h1"},
+    "items": {"name": "items", "kind": "shape", "rect": {"left": 0.06, "top": 0.32, "width": 0.88, "height": 0.42}}
+  },
+  "repeat_slot": "items"
+}

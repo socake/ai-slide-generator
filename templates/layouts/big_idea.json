@@ -1,0 +1,9 @@
+{
+  "id": "big_idea",
+  "slide_type": "big_idea",
+  "name": "Big Idea",
+  "slots": {
+    "statement": {"name": "statement", "kind": "text", "rect": {"left": 0.1, "top": 0.34, "width": 0.8, "height": 0.28}, "font_role": "display"},
+    "support": {"name": "support", "kind": "text", "rect": {"left": 0.1, "top": 0.66, "width": 0.8, "height": 0.1}, "font_role": "h2", "color_role": "text_muted"}
+  }
+}

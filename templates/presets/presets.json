@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "_note": "模板预设：theme(配色字阶) + layout(按 SlideType 的版式变体) + slot_map(字段映射/约束)。结构说明见 README.md。",
+  "templates": [
+    {
+      "id": "baseline",
+      "name": "万金油基准",
+      "description": "适配各类场景的通用基准；不选其它模板时默认使用。",
+      "scene": "通用",
+      "default": true,
+      "theme": {
+        "id": "baseline",
+        "name": "Baseline Neutral",
+        "palette": {
+          "primary": "#4338ca", "secondary": "#3730a3", "accent": "#f59e0b",
+          "background": "#ffffff", "surface": "#f4f5fb", "text": "#1a1a2e",
+          "text_muted": "#6b7280", "border": "#e3e4f0"
+        },
+        "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+        "type_scale": { "display": 52, "h1": 34, "h2": 22, "body": 16, "caption": 12, "line_height": 1.3 }
+      },
+      "layout": {
+        "cover": "centered", "section": "left_number", "agenda": "numbered_list",
+        "big_idea": "centered_statement", "cards": "grid_3", "comparison": "two_col",
+        "data": "metric_row", "process": "vertical_steps", "timeline": "horizontal",
+        "summary": "bullets", "closing": "centered"
+      },
+      "slot_map": {
+        "_identity": true,
+        "constraints": { "cards.max": 4, "data.metrics.max": 3, "agenda.items.max": 6 }
+      }
+    },
+    {
+      "id": "tech_dark",
+      "name": "科技深色",
+      "description": "深色科技感，适合架构/技术分享。",
+      "scene": "技术分享",
+      "default": false,
+      "theme": {
+        "id": "tech_dark", "name": "Tech Dark",
+        "palette": {
+          "primary": "#0ea5e9", "secondary": "#0369a1", "accent": "#22d3ee",
+          "background": "#0b1220", "surface": "#111a2e", "text": "#e5edff",
+          "text_muted": "#94a3b8", "border": "#1e293b"
+        },
+        "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+        "type_scale": { "display": 56, "h1": 36, "h2": 24, "body": 16, "caption": 12, "line_height": 1.25 }
+      },
+      "layout": { "cover": "left_aligned", "cards": "grid_3", "data": "big_number", "comparison": "two_col", "process": "vertical_steps" }
+    },
+    {
+      "id": "business_clean",
+      "name": "商务简洁",
+      "description": "白底藏青/墨绿，适合汇报与方案。",
+      "scene": "汇报/方案",
+      "default": false,
+      "theme": {
+        "id": "business_clean", "name": "Business Clean",
+        "palette": {
+          "primary": "#0f766e", "secondary": "#134e4a", "accent": "#f59e0b",
+          "background": "#ffffff", "surface": "#f0fdfa", "text": "#0f172a",
+          "text_muted": "#64748b", "border": "#e2e8f0"
+        },
+        "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+        "type_scale": { "display": 52, "h1": 34, "h2": 22, "body": 16, "caption": 12, "line_height": 1.3 }
+      },
+      "layout": { "cover": "centered", "data": "metric_row", "comparison": "two_col", "timeline": "horizontal" }
+    },
+    {
+      "id": "teaching_fresh",
+      "name": "教学清新",
+      "description": "白底蓝调，清爽易读，适合课件/教程。",
+      "scene": "课件/教程",
+      "default": false,
+      "theme": {
+        "id": "teaching_fresh", "name": "Teaching Fresh",
+        "palette": {
+          "primary": "#2563eb", "secondary": "#1d4ed8", "accent": "#f59e0b",
+          "background": "#ffffff", "surface": "#eff6ff", "text": "#0f172a",
+          "text_muted": "#64748b", "border": "#dbeafe"
+        },
+        "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+        "type_scale": { "display": 50, "h1": 34, "h2": 22, "body": 17, "caption": 13, "line_height": 1.35 }
+      },
+      "layout": { "cover": "centered", "agenda": "numbered_list", "process": "vertical_steps", "cards": "grid_3" }
+    },
+    {
+      "id": "magazine",
+      "name": "杂志编辑",
+      "description": "米底珊瑚红 + 衬线感，适合品牌/故事。",
+      "scene": "品牌/故事",
+      "default": false,
+      "theme": {
+        "id": "magazine", "name": "Magazine Editorial",
+        "palette": {
+          "primary": "#b91c1c", "secondary": "#7c2d12", "accent": "#0f766e",
+          "background": "#fbf7f0", "surface": "#f5ede0", "text": "#1c1917",
+          "text_muted": "#78716c", "border": "#e7e0d4"
+        },
+        "fonts": { "heading": "Noto Serif CJK SC", "body": "Noto Sans CJK SC" },
+        "type_scale": { "display": 60, "h1": 40, "h2": 26, "body": 17, "caption": 13, "line_height": 1.4 }
+      },
+      "layout": { "cover": "left_aligned", "big_idea": "centered_statement", "cards": "grid_2", "timeline": "horizontal" }
+    },
+    {
+      "id": "pitch_bold",
+      "name": "路演大胆",
+      "description": "紫色渐变强对比，适合融资/发布路演。",
+      "scene": "路演",
+      "default": false,
+      "theme": {
+        "id": "pitch_bold", "name": "Pitch Bold",
+        "palette": {
+          "primary": "#7c3aed", "secondary": "#6d28d9", "accent": "#fb7185",
+          "background": "#faf5ff", "surface": "#f3e8ff", "text": "#2e1065",
+          "text_muted": "#7c6f9b", "border": "#e9d5ff"
+        },
+        "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+        "type_scale": { "display": 64, "h1": 42, "h2": 26, "body": 17, "caption": 13, "line_height": 1.2 }
+      },
+      "layout": { "cover": "centered", "big_idea": "centered_statement", "data": "big_number", "comparison": "two_col" }
+    }
+  ]
+}

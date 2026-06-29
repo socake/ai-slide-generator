@@ -1,0 +1,31 @@
+# ── 密钥 / 环境
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── 本地临时产物(交付的 demos/ 要留,不忽略)
+outputs/
+*.tmp
+
+# ── Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.log

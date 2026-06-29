@@ -1,0 +1,10 @@
+{
+  "id": "quote",
+  "slide_type": "quote",
+  "name": "Quote",
+  "slots": {
+    "quotemark": {"name": "quotemark", "kind": "text", "rect": {"left": 0.08, "top": 0.14, "width": 0.22, "height": 0.18}, "font_role": "display", "color_role": "accent"},
+    "quote": {"name": "quote", "kind": "text", "rect": {"left": 0.1, "top": 0.32, "width": 0.8, "height": 0.3}, "font_role": "display"},
+    "attribution": {"name": "attribution", "kind": "text", "rect": {"left": 0.1, "top": 0.66, "width": 0.8, "height": 0.08}, "font_role": "h2", "color_role": "text_muted", "align": "right"}
+  }
+}

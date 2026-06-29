@@ -1,0 +1,20 @@
+{
+  "id": "pitch_bold",
+  "name": "Pitch Bold",
+  "mood": ["bold", "ambitious", "energetic"],
+  "palette": {
+    "primary": "#7c3aed",
+    "secondary": "#a855f7",
+    "accent": "#f43f5e",
+    "background": "#faf5ff",
+    "surface": "#f3e8ff",
+    "text": "#1e1b2e",
+    "text_muted": "#6b7280",
+    "border": "#e9d5ff"
+  },
+  "fonts": { "heading": "Noto Sans CJK SC", "body": "Noto Sans CJK SC" },
+  "type_scale": { "display": 60, "h1": 40, "h2": 26, "body": 17, "caption": 12, "line_height": 1.2 },
+  "shape_style": "rounded",
+  "background_style": "solid",
+  "footer_style": "branded"
+}
