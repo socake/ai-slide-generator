@@ -94,7 +94,9 @@ make cli IN=examples/kyoto_weekend.json OUT=out.pptx                    # Makefi
 
 ## 📂 Demo：预生成样例（直接打开看效果）
 
-`demos/` 下是 **5 套用 deepseek-chat 真实生成**的产物（`degraded=false`，非 mock 占位），clone 仓库后**无需联网、无需 key** 即可直接打开。
+> ✅ **看效果的基准就是这个目录：`demos/`** —— 这 5 套是**实际跑通、人工验证过**的真实产出（deepseek-chat，`degraded=false`，非 mock 占位）。其它生成方式（默认 `make demo` 走 mock）只作功能演示，覆盖了无妨，**一切以本目录这套为准**。
+
+clone 仓库后**无需联网、无需 key** 即可直接打开。
 
 ### 打开路径：`demos/pptx/`
 
