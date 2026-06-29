@@ -1,0 +1,687 @@
+{
+  "schema_version": "1.0",
+  "id": "deck-dd19f878",
+  "title": "Python 入门 30 分钟",
+  "topic": "Python 入门 30 分钟",
+  "brief": "帮零基础的人理解什么是变量、循环、函数、列表、字典,并能照着写出几行能跑的代码",
+  "audience": "编程零基础",
+  "purpose": "帮助编程零基础听众在30分钟内理解Python的核心概念（变量、循环、函数、列表、字典），并能亲手写出简单可运行的代码，建立编程信心与兴趣。",
+  "deck_type": "teaching",
+  "narrative": {
+    "hook": "你每天使用手机、电脑，但有没有想过它们是如何‘听懂’你的指令的？今天，这层神秘的面纱你用30分钟就能揭开。",
+    "conflict": "很多人觉得编程难，是‘高智商’的事，其实编程不过是把你想做的事情一步步用计算机能理解的语言说出来。你缺少的不是天赋，而是一个正确的起点。",
+    "progression": [
+      "先建立Python的感性认识——它能做什么，为什么是Python。",
+      "带领听众动手安装环境并运行第一行代码，建立‘我能行’的即时反馈。",
+      "从最基础的变量和数据类型入手，理解数据在内存中的表示。",
+      "引入条件判断和循环，让程序具备逻辑和重复执行能力。",
+      "抽象出函数，体会代码复用与模块化思考。",
+      "掌握列表和字典这两种最常用的容器，处理批量数据。"
+    ],
+    "resolution": "现在你已经掌握了编程的五个核心积木：变量、条件、循环、函数、容器。它们可以组合出任何程序——你已经在编程大门里了。"
+  },
+  "theme": {
+    "id": "teaching",
+    "name": "Teaching Clean",
+    "mood": [
+      "clean",
+      "friendly",
+      "approachable"
+    ],
+    "palette": {
+      "primary": "#2563eb",
+      "secondary": "#1d4ed8",
+      "accent": "#f59e0b",
+      "background": "#ffffff",
+      "surface": "#f1f5f9",
+      "text": "#0f172a",
+      "text_muted": "#64748b",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Noto Sans CJK SC",
+      "body": "Noto Sans CJK SC"
+    },
+    "type_scale": {
+      "display": 54.0,
+      "h1": 36.0,
+      "h2": 24.0,
+      "body": 16.0,
+      "caption": 12.0,
+      "line_height": 1.25
+    },
+    "spacing": {
+      "unit": 0.012,
+      "xs": 0.012,
+      "s": 0.024,
+      "m": 0.04,
+      "l": 0.064,
+      "xl": 0.096
+    },
+    "grid": {
+      "columns": 12,
+      "margin": 0.06,
+      "gutter": 0.02
+    },
+    "shape_style": "rounded",
+    "background_style": "solid",
+    "footer_style": "minimal"
+  },
+  "slides": [
+    {
+      "id": "slide-0",
+      "index": 0,
+      "title": "Python 入门 30 分钟",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "cover",
+      "subtitle": "零基础也能写代码，从变量到字典，一次讲透核心概念",
+      "kicker": "跟着我，今天就能跑出你的第一个Python程序"
+    },
+    {
+      "id": "slide-1",
+      "index": 1,
+      "title": "今天学什么",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "agenda",
+      "items": [
+        "Python 是什么——为什么它简单又强大",
+        "搭建环境 & 第一行代码——安装和print('Hello World')",
+        "变量与数字、字符串——存储和操作数据",
+        "条件判断与循环——让程序做决策、重复执行",
+        "函数调用与定义——封装逻辑，避免重复",
+        "列表与字典——管理多个数据的神器"
+      ]
+    },
+    {
+      "id": "slide-2",
+      "index": 2,
+      "title": "今天你掌握了什么",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "summary",
+      "points": [
+        "变量用来存储数据，但要注意类型，比如整数和字符串不能直接拼接。",
+        "条件判断（if）和循环（for/while）让你控制程序流程，处理不同情况。",
+        "用 def 定义函数、return 返回值，可以一次编写多次复用。",
+        "列表 [] 和字典 {} 帮你管理多个数据，例如存储学生成绩或购物清单。",
+        "你已经具备了继续深入的基础，可以尝试解决更复杂的问题。"
+      ]
+    },
+    {
+      "id": "slide-3",
+      "index": 3,
+      "title": "什么是 Python？",
+      "speaker_notes": "首先问大家：你每天用手机电脑，有没有想过它们怎么工作？今天我们就用Python来揭开这层面纱。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "一种强大而简单的编程语言，带你走进编程世界"
+    },
+    {
+      "id": "slide-4",
+      "index": 4,
+      "title": "Python 能做什么？",
+      "speaker_notes": "Python的应用非常广泛，从数据科学到网站开发，从人工智能到自动化，几乎无处不在。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "数据分析",
+          "body": "使用 Pandas 和 NumPy 处理百万行表格数据，进行统计分析和可视化，如电影评分分析。",
+          "icon": "data"
+        },
+        {
+          "title": "网站开发",
+          "body": "通过 Django 或 Flask 框架快速搭建博客、电商等 Web 应用，例如 Instagram 后端用 Django。",
+          "icon": "launch"
+        },
+        {
+          "title": "人工智能",
+          "body": "利用 TensorFlow 和 PyTorch 训练图像识别、语音助手等模型，AlphaGo 的策略网络也用 Python。",
+          "icon": "idea"
+        },
+        {
+          "title": "自动化脚本",
+          "body": "自动处理文件、发送邮件、爬取网页数据，比如每天自动备份文件到云盘。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-5",
+      "index": 5,
+      "title": "为什么选择 Python 而不是其他语言？",
+      "speaker_notes": "对比一下Python和C++、Java等语言，你会发现Python在可读性和开发效率上优势明显。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "Python 的优势",
+        "points": [
+          "代码简洁，用缩进代替花括号，可读性极高，新手也能看懂。",
+          "报错信息清晰明了，能直接指出哪一行有问题，调试成本低。",
+          "拥有超过 20 万个第三方库，无需从零造轮子。",
+          "支持 Windows、macOS、Linux，一次编写到处运行。"
+        ]
+      },
+      "right": {
+        "heading": "其他语言（如 C++/Java）",
+        "points": [
+          "语法复杂，需要管理内存、分号等细节，代码冗长。",
+          "报错信息有时晦涩，新手难以定位错误。",
+          "标准库有限，需要自己实现很多功能，开发周期长。",
+          "部分语言平台依赖性强，跨平台需额外配置。"
+        ]
+      }
+    },
+    {
+      "id": "slide-6",
+      "index": 6,
+      "title": "编程的本质：告诉计算机怎么做",
+      "speaker_notes": "核心思想：计算机很笨，需要你把每一步说清楚。Python就是你和计算机之间的翻译官。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "big_idea",
+      "statement": "编程就是用计算机能理解的语言，把你要做的事情一步步描述清楚。",
+      "support": "Python 的语法最接近英语，比如 print('Hello')，你几乎能猜到它的意思。"
+    },
+    {
+      "id": "slide-7",
+      "index": 7,
+      "title": "搭好环境，写出第一行代码",
+      "speaker_notes": "本章我们将从零开始搭建编程环境，并运行第一行代码。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "section",
+      "section_number": 2,
+      "subtitle": "只需安装 Python 和一个文本编辑器即可开始，命令行是对话窗口，第一行代码是 print('Hello, World!')"
+    },
+    {
+      "id": "slide-8",
+      "index": 8,
+      "title": "安装 Python 的步骤",
+      "speaker_notes": "确保每一步都操作正确，尤其是PATH勾选。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "下载安装包",
+          "desc": "打开官网 python.org，下载对应你操作系统（Windows/Mac/Linux）的最新版本安装包。"
+        },
+        {
+          "title": "勾选 PATH",
+          "desc": "安装时务必勾选“Add Python to PATH”，否则之后在终端无法直接使用 python 命令。"
+        },
+        {
+          "title": "验证安装",
+          "desc": "打开终端（Win: cmd, Mac/Linux: terminal），输入 python --version，应显示版本号如 Python 3.12.0。"
+        }
+      ]
+    },
+    {
+      "id": "slide-9",
+      "index": 9,
+      "title": "两种运行 Python 的方式",
+      "speaker_notes": "交互模式适合尝试，脚本模式是实际开发的主要方式。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "交互模式",
+          "body": "在终端输入 python 进入交互环境，每输一行代码立即执行，适合快速实验和测试小代码片段。",
+          "icon": "idea"
+        },
+        {
+          "title": "脚本模式",
+          "body": "将代码保存到 .py 文件，如 hello.py，再运行 python hello.py 执行整个程序，适合编写完整功能。",
+          "icon": "launch"
+        },
+        {
+          "title": "本课选择",
+          "body": "我们主要使用脚本模式，因为它能让你体验完整的“写代码-运行-看结果”开发流程。",
+          "icon": "goal"
+        }
+      ]
+    },
+    {
+      "id": "slide-10",
+      "index": 10,
+      "title": "你的第一个程序：打招呼",
+      "speaker_notes": "让学生亲自操作，体验成功的喜悦。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "big_idea",
+      "statement": "编写并运行第一个Python程序是编程之旅最重要的里程碑——你已经成功运行了人生第一个Python程序！",
+      "support": "据统计，80%的初学者在成功运行第一个程序后，学习动力会显著提升。"
+    },
+    {
+      "id": "slide-11",
+      "index": 11,
+      "title": "变量与基本数据类型",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 3,
+      "subtitle": "变量就像一个贴了标签的盒子，用来存放数据。Python里不需要声明类型，直接赋值即可。常用数据类型有数字（int/float）、字符串（str）、布尔值（bool）。"
+    },
+    {
+      "id": "slide-12",
+      "index": 12,
+      "title": "数字：整数与小数",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "整数",
+          "body": "整数如1, 100, -10可直接书写，用于计数和索引。",
+          "icon": "data"
+        },
+        {
+          "title": "浮点数",
+          "body": "小数如3.14, 0.5, -2.0用于表示带小数的数值。",
+          "icon": "data"
+        },
+        {
+          "title": "算术运算",
+          "body": "支持加+、减-、乘*、除/、整除//、取余%，例如print(5+3)输出8。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-13",
+      "index": 13,
+      "title": "字符串：文本数据",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "定义字符串",
+          "body": "用单引号或双引号包裹，如'你好'或\"Python\"，中间可包含空格和标点。",
+          "icon": "idea"
+        },
+        {
+          "title": "拼接",
+          "body": "使用+号连接字符串，例如'Hello'+' '+'World'得到'Hello World'。",
+          "icon": "process"
+        },
+        {
+          "title": "重复",
+          "body": "用*号重复字符串，如'Ha'*3结果为'HaHaHa'。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-14",
+      "index": 14,
+      "title": "布尔值与类型检查",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "布尔值",
+          "body": "只有True和False两个值，用于条件判断。",
+          "icon": "idea"
+        },
+        {
+          "title": "比较运算",
+          "body": "==, !=, <, >, <=, >=返回布尔值，如3>5结果为False。",
+          "icon": "compare"
+        },
+        {
+          "title": "type()函数",
+          "body": "查看变量类型，例如type(3)返回<class 'int'>。",
+          "icon": "quality"
+        }
+      ]
+    },
+    {
+      "id": "slide-15",
+      "index": 15,
+      "title": "动手写：变量赋值与运算",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "定义变量",
+          "desc": "创建变量age=18, price=9.9, name='Python'，直接赋值即可。"
+        },
+        {
+          "title": "输出变量",
+          "desc": "使用print(age)和print('价格：', price)在控制台显示结果。"
+        },
+        {
+          "title": "做计算",
+          "desc": "计算total = price * 2并用print(total)输出，验证运算结果。"
+        }
+      ]
+    },
+    {
+      "id": "slide-16",
+      "index": 16,
+      "title": "条件与循环：让代码会思考、会重复",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 4,
+      "subtitle": "为什么程序能做出判断并自动执行重复任务？条件与循环就是核心机制。"
+    },
+    {
+      "id": "slide-17",
+      "index": 17,
+      "title": "if / elif / else：条件判断",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "基本语法",
+        "points": [
+          "if 条件后加冒号，下一行缩进写执行代码。",
+          "else 对应条件不成立的情况，同样需要冒号和缩进。",
+          "多分支用 elif 连接，可检查多个条件。"
+        ]
+      },
+      "right": {
+        "heading": "实际例子",
+        "points": [
+          "score = 85；if score >= 90: print('优秀') elif score >= 60: print('及格') else: print('不及格')",
+          "注意缩进错误会导致程序崩溃，Python 强制要求一致缩进。",
+          "条件表达式支持比较运算符和逻辑运算符组合。"
+        ]
+      }
+    },
+    {
+      "id": "slide-18",
+      "index": 18,
+      "title": "for 循环：遍历列表/范围",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "遍历 range",
+          "desc": "for i in range(5): print(i) 会输出 0,1,2,3,4，共5次。"
+        },
+        {
+          "title": "遍历列表",
+          "desc": "for fruit in ['苹果', '香蕉', '橘子']: print(fruit) 依次输出每个水果。"
+        },
+        {
+          "title": "使用 range 参数",
+          "desc": "range(start, stop, step) 生成数字序列，如 range(1,10,2) 输出1,3,5,7,9。"
+        },
+        {
+          "title": "循环体缩进",
+          "desc": "for 循环内所有缩进的语句都会重复执行，缩进结束则退出循环。"
+        }
+      ]
+    },
+    {
+      "id": "slide-19",
+      "index": 19,
+      "title": "while 循环：直到条件不满足为止",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "while 循环让代码在条件为真时不断重复，是构建游戏、交互程序的基础。",
+      "support": "示例：count = 0; while count < 3: print(count); count += 1 会输出0,1,2，每次自增避免无限循环。"
+    },
+    {
+      "id": "slide-20",
+      "index": 20,
+      "title": "函数：把代码打包复用",
+      "speaker_notes": "函数是编程的核心抽象工具，今天我们学习如何定义和调用函数。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 5,
+      "subtitle": "如何将一段代码命名并重复使用，减少重复、提升模块化？"
+    },
+    {
+      "id": "slide-21",
+      "index": 21,
+      "title": "定义与调用函数",
+      "speaker_notes": "通过示例演示定义和调用，让学生理解函数如何打包代码。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "定义函数",
+          "body": "使用 def 关键字定义，后跟函数名和参数列表，例如 def greet(name):。",
+          "icon": "idea"
+        },
+        {
+          "title": "调用函数",
+          "body": "通过函数名加括号调用，如 greet('小明') 会执行函数体并输出 '你好, 小明'。",
+          "icon": "launch"
+        },
+        {
+          "title": "参数灵活",
+          "body": "函数可接受多个参数，也可没有参数；参数在函数内部作为变量使用。",
+          "icon": "process"
+        },
+        {
+          "title": "代码复用",
+          "body": "定义一次函数，可在程序任意位置重复调用，避免复制粘贴相同代码。",
+          "icon": "quality"
+        }
+      ]
+    },
+    {
+      "id": "slide-22",
+      "index": 22,
+      "title": "带返回值的函数",
+      "speaker_notes": "重点讲解 return 的作用，以及如何利用返回值进行后续计算。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "return 语句",
+          "body": "使用 return 从函数返回一个值，函数执行到 return 立即结束。",
+          "icon": "goal"
+        },
+        {
+          "title": "返回值赋值",
+          "body": "调用带 return 的函数时，返回值可赋给变量，如 result = add(3,5)。",
+          "icon": "process"
+        },
+        {
+          "title": "示例：加法函数",
+          "body": "def add(a, b): return a + b；调用 add(3,5) 得到 8，打印 result 输出 8。",
+          "icon": "data"
+        },
+        {
+          "title": "无返回值默认 None",
+          "body": "函数没有 return 语句时，默认返回 None，表示没有值。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-23",
+      "index": 23,
+      "title": "动手写：用函数改造之前代码",
+      "speaker_notes": "引导学生将之前学的条件判断封装成函数，体会模块化编程的优势。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "定义 get_grade 函数",
+          "desc": "写一个函数接收 score 参数，根据分数返回等级字符串：优秀、及格或不及格。"
+        },
+        {
+          "title": "实现判断逻辑",
+          "desc": "使用 if-elif-else 结构：score >= 90 返回'优秀'，score >= 60 返回'及格'，否则返回'不及格'。"
+        },
+        {
+          "title": "调用并输出结果",
+          "desc": "调用 get_grade(85)，函数返回'优秀'，print 输出该结果。"
+        }
+      ]
+    },
+    {
+      "id": "slide-24",
+      "index": 24,
+      "title": "列表与字典：管理多个数据",
+      "speaker_notes": "列表有序，字典无序但查找快；两者都是基础且强大的工具。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 6,
+      "subtitle": "学习两种最常用的容器类型，它们能帮你高效组织和管理多个数据。"
+    },
+    {
+      "id": "slide-25",
+      "index": 25,
+      "title": "列表：有序集合",
+      "speaker_notes": "列表就像一串珍珠，每个位置都有编号，可以随时增减。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "创建列表",
+          "body": "用方括号括起逗号分隔的元素，如 fruits = ['苹果', '香蕉', '橘子']。",
+          "icon": "data"
+        },
+        {
+          "title": "访问元素",
+          "body": "通过索引从0开始获取，例如 fruits[0] 返回 '苹果'。",
+          "icon": "data"
+        },
+        {
+          "title": "增删改操作",
+          "body": "使用 append('葡萄') 添加末尾，remove('香蕉') 删除指定项。",
+          "icon": "data"
+        },
+        {
+          "title": "获取长度",
+          "body": "len(fruits) 返回元素个数，例如3个水果则返回3。",
+          "icon": "data"
+        }
+      ]
+    },
+    {
+      "id": "slide-26",
+      "index": 26,
+      "title": "字典：键值对映射",
+      "speaker_notes": "字典类似现实中的字典，通过词条（键）快速找到释义（值）。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "创建字典",
+          "body": "用花括号包含键值对，如 student = {'name': '小明', 'age': 18, 'score': 95}。",
+          "icon": "data"
+        },
+        {
+          "title": "访问与修改值",
+          "body": "通过键访问，如 student['name'] 返回 '小明'；赋值即可修改，如 student['age'] = 19。",
+          "icon": "data"
+        },
+        {
+          "title": "添加与删除",
+          "body": "直接赋值新键添加，如 student['city'] = '北京'；del student['score'] 删除指定键。",
+          "icon": "data"
+        },
+        {
+          "title": "键的灵活性",
+          "body": "键通常是字符串，但也可以是数字或元组，必须唯一且不可变。",
+          "icon": "data"
+        }
+      ]
+    },
+    {
+      "id": "slide-27",
+      "index": 27,
+      "title": "列表 vs 字典：如何选择？",
+      "speaker_notes": "两者可嵌套使用，列表里放字典常见于表格数据。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "列表适用场景",
+        "points": [
+          "元素有顺序关系，比如排行榜、时间序列。",
+          "需要通过位置（索引）频繁访问元素。",
+          "需要保持插入顺序且允许重复值。"
+        ]
+      },
+      "right": {
+        "heading": "字典适用场景",
+        "points": [
+          "数据有唯一标识（键），如学生信息用学号查找。",
+          "需要快速根据键获取值，性能优于列表遍历。",
+          "键值对关系清晰，如配置参数、映射关系。"
+        ]
+      }
+    },
+    {
+      "id": "slide-28",
+      "index": 28,
+      "title": "下一步做什么？",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "closing",
+      "subtitle": "建议练习：做一个简单的待办事项命令行程序",
+      "cta": "今天就开始动手！编程是练出来的，多写代码。"
+    }
+  ]
+}

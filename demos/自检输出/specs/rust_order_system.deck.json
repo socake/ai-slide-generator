@@ -1,0 +1,786 @@
+{
+  "schema_version": "1.0",
+  "id": "deck-8a053ebd",
+  "title": "为什么我们应该用 Rust 重写订单系统",
+  "topic": "给老板讲清楚为什么我们应该用 Rust 重写订单系统",
+  "brief": "现在用 Python 写的订单系统在大促时频繁超时,影响下单。希望说服一个非技术背景的 CEO 同意立项",
+  "audience": "非技术 CEO",
+  "purpose": "说服非技术背景的CEO同意立项用Rust重写订单系统，以解决大促超时问题，并降低长期运维成本。",
+  "deck_type": "exec_report",
+  "narrative": {
+    "hook": "大促时用户下不了单，我们损失了多少？",
+    "conflict": "Python系统性能瓶颈越来越严重，修修补补已无法应对业务增长。",
+    "progression": [
+      "暴露当前系统的性能问题与业务影响",
+      "分析Python技术栈的固有缺陷",
+      "介绍Rust的核心优势与匹配度",
+      "给出具体的迁移计划与时间表",
+      "量化投入产出与风险缓解措施"
+    ],
+    "resolution": "采用Rust重写核心链路，在保障稳定性的同时获得10倍性能提升，彻底解决超时问题。"
+  },
+  "theme": {
+    "id": "exec_report",
+    "name": "Executive Dark",
+    "mood": [
+      "serious",
+      "executive",
+      "premium"
+    ],
+    "palette": {
+      "primary": "#0ea5e9",
+      "secondary": "#38bdf8",
+      "accent": "#f43f5e",
+      "background": "#0b1220",
+      "surface": "#111a2e",
+      "text": "#e8eef9",
+      "text_muted": "#94a3b8",
+      "border": "#243049"
+    },
+    "fonts": {
+      "heading": "Noto Sans CJK SC",
+      "body": "Noto Sans CJK SC"
+    },
+    "type_scale": {
+      "display": 56.0,
+      "h1": 38.0,
+      "h2": 24.0,
+      "body": 16.0,
+      "caption": 12.0,
+      "line_height": 1.2
+    },
+    "spacing": {
+      "unit": 0.012,
+      "xs": 0.012,
+      "s": 0.024,
+      "m": 0.04,
+      "l": 0.064,
+      "xl": 0.096
+    },
+    "grid": {
+      "columns": 12,
+      "margin": 0.06,
+      "gutter": 0.02
+    },
+    "shape_style": "sharp",
+    "background_style": "solid",
+    "footer_style": "branded"
+  },
+  "slides": [
+    {
+      "id": "slide-0",
+      "index": 0,
+      "title": "为什么我们应该用 Rust 重写订单系统",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cover",
+      "subtitle": "大促超时导致用户流失与营收损失，技术选型升级是业务增长的必然选择，Rust 提供性能与安全的最佳平衡",
+      "kicker": "exec_report"
+    },
+    {
+      "id": "slide-1",
+      "index": 1,
+      "title": "议程",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "agenda",
+      "items": [
+        "现状：订单系统的痛点与风险",
+        "Python 架构的深层问题",
+        "Rust 如何解决这些问题",
+        "重写方案与迁移路径",
+        "投入产出与风险控制",
+        "行动建议与下一步"
+      ]
+    },
+    {
+      "id": "slide-2",
+      "index": 2,
+      "title": "总结与呼吁",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "summary",
+      "points": [
+        "Python 订单系统已到性能瓶颈，且不断恶化——最新一次大促超时率达12%，导致约5%的订单流失。",
+        "Rust 提供10倍性能提升和更强的内存安全性，可彻底解决超时问题，保障大促稳定。",
+        "12个月完成核心链路迁移，投资回收期仅1年，预计每年节省因超时导致的营收损失超千万元。",
+        "早迁移早受益，否则大促风险越来越高，下一次大促可能带来更大损失。"
+      ]
+    },
+    {
+      "id": "slide-3",
+      "index": 3,
+      "title": "现状：订单系统的痛点与风险",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "大促期间订单系统频繁超时，影响用户体验，运维成本高，问题定位困难。"
+    },
+    {
+      "id": "slide-4",
+      "index": 4,
+      "title": "近三次大促性能表现",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "data",
+      "metrics": [
+        {
+          "value": "7000 QPS",
+          "label": "2024双11峰值QPS",
+          "delta": null
+        },
+        {
+          "value": "5.2%",
+          "label": "2024双11超时率",
+          "delta": null
+        },
+        {
+          "value": "9000 QPS",
+          "label": "2025年货节峰值QPS",
+          "delta": null
+        },
+        {
+          "value": "8.1%",
+          "label": "2025年货节超时率",
+          "delta": null
+        },
+        {
+          "value": "11000 QPS",
+          "label": "2025女神节峰值QPS",
+          "delta": null
+        },
+        {
+          "value": "12.3%",
+          "label": "2025女神节超时率",
+          "delta": null
+        }
+      ],
+      "note": "超时率随QPS增长呈指数上升趋势，性能瓶颈明显。"
+    },
+    {
+      "id": "slide-5",
+      "index": 5,
+      "title": "超时带来的业务损失",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "用户放弃下单",
+          "body": "订单超时导致约15%用户在支付环节流失，以女神节峰值算，损失约1650单/分钟。",
+          "icon": "risk"
+        },
+        {
+          "title": "客诉激增",
+          "body": "大促期间客服人力需翻倍，仍无法应对投诉量3倍增长，客户满意度下降12%。",
+          "icon": "cost"
+        },
+        {
+          "title": "品牌声誉受损",
+          "body": "超时问题在社交媒体引发负面话题，2025年货节相关微博热搜阅读量达2.3亿。",
+          "icon": "growth"
+        }
+      ]
+    },
+    {
+      "id": "slide-6",
+      "index": 6,
+      "title": "当前架构的资源消耗",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "GIL限制CPU利用率",
+          "body": "Python GIL导致单进程只能利用1核，为应对高并发被迫开200个容器实例，资源浪费严重。",
+          "icon": "risk"
+        },
+        {
+          "title": "内存占用高",
+          "body": "单个容器内存2GB，200个实例共消耗400GB内存，年内存成本超200万元。",
+          "icon": "cost"
+        },
+        {
+          "title": "数据库连接数飙升",
+          "body": "高峰时数据库连接数达到5000上限，经常触发连接池抛错，影响其他业务。",
+          "icon": "risk"
+        }
+      ]
+    },
+    {
+      "id": "slide-7",
+      "index": 7,
+      "title": "增长瓶颈：性能天花板已到",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "即使无限加机器，Python架构的性能天花板已至，无法支撑未来订单增长。",
+      "support": "订单量年增长30%，现有架构两年内QPS需求将达20000，超时率预计突破20%。"
+    },
+    {
+      "id": "slide-8",
+      "index": 8,
+      "title": "Python 架构的深层问题",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 2,
+      "subtitle": "全局解释器锁（GIL）限制并行能力，动态类型导致运行时错误，GC暂停引入不可控延迟"
+    },
+    {
+      "id": "slide-9",
+      "index": 9,
+      "title": "Python vs Rust：架构特性对比",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "Python",
+        "points": [
+          "动态类型检查，类型错误在运行时才能发现",
+          "垃圾回收（GC）机制会不定期暂停程序执行",
+          "GIL限制了多线程并行，无法充分利用多核CPU"
+        ]
+      },
+      "right": {
+        "heading": "Rust",
+        "points": [
+          "静态类型系统，编译期消除类型错误",
+          "零成本抽象，所有权模型无需GC",
+          "无GIL，天然支持线程安全并行"
+        ]
+      }
+    },
+    {
+      "id": "slide-10",
+      "index": 10,
+      "title": "Python 隐式错误如何影响订单",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "类型错误致订单状态更新失败",
+          "body": "每月约50次在支付回调中传入字符串而非枚举类型，导致状态机卡住",
+          "icon": "risk"
+        },
+        {
+          "title": "内存泄漏引发OOM",
+          "body": "平均每周1次因循环引用未被回收导致进程崩溃，需人工重启",
+          "icon": "risk"
+        },
+        {
+          "title": "库依赖冲突导致部署失败",
+          "body": "大促前升级三方库时版本不兼容，回滚耗时90分钟",
+          "icon": "cost"
+        }
+      ]
+    },
+    {
+      "id": "slide-11",
+      "index": 11,
+      "title": "Python 系统故障时间线",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "timeline",
+      "events": [
+        {
+          "time": "2024年6月",
+          "title": "内存泄漏致订单数据丢失",
+          "desc": "一次性丢失2000+订单，通过日志恢复花费8小时"
+        },
+        {
+          "time": "2024年11月",
+          "title": "双11GC长暂停大面积超时",
+          "desc": "GC暂停达2.3秒导致500+请求超时，影响促销活动"
+        },
+        {
+          "time": "2025年2月",
+          "title": "上游库更新兼容性问题",
+          "desc": "依赖的ORM库更新后接口变更，回滚耗时4小时"
+        }
+      ]
+    },
+    {
+      "id": "slide-12",
+      "index": 12,
+      "title": "一次典型故障处理流程",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "告警触发",
+          "desc": "监控系统检测到下单成功率低于95%触发P0告警"
+        },
+        {
+          "title": "排查日志",
+          "desc": "值班工程师登录机器分析应用日志，平均耗时45分钟"
+        },
+        {
+          "title": "识别根因",
+          "desc": "发现Python线程因GIL竞争阻塞，导致请求排队"
+        },
+        {
+          "title": "恢复服务",
+          "desc": "重启Python进程恢复正常，但期间丢失部分订单数据"
+        }
+      ]
+    },
+    {
+      "id": "slide-13",
+      "index": 13,
+      "title": "Rust 如何解决这些问题",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "零成本抽象、无GC和所有权模型如何让系统既快又安全？"
+    },
+    {
+      "id": "slide-14",
+      "index": 14,
+      "title": "Rust vs Python：性能实测数据",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "Python（当前系统）",
+        "points": [
+          "订单查询平均延迟 50ms，高峰期飙升至 200ms 以上",
+          "价格计算平均延迟 30ms，受GC影响波动达 ±20ms",
+          "同等负载下内存占用 1.2GB，OOM 风险较高"
+        ]
+      },
+      "right": {
+        "heading": "Rust（重写后）",
+        "points": [
+          "订单查询平均延迟 2ms，P99 稳定在 5ms 以内",
+          "价格计算平均延迟 0.5ms，无GC抖动，延迟稳定",
+          "同等负载下内存占用仅 240MB，降低 80%"
+        ]
+      }
+    },
+    {
+      "id": "slide-15",
+      "index": 15,
+      "title": "Rust 的安全保证在订单场景的价值",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "编译时消除空指针与数据竞争",
+          "body": "所有权系统在编译期检查所有引用有效性，杜绝运行时 NullPointerException，订单状态切换不会因空指针崩溃。",
+          "icon": "security"
+        },
+        {
+          "title": "无GC，延迟稳定无暂停",
+          "body": "Rust 无需垃圾回收，内存自动释放，不会出现 Stop-The-World 暂停，订单处理延迟始终在微秒级。",
+          "icon": "time"
+        },
+        {
+          "title": "强制错误处理，无未捕获异常",
+          "body": "Rust 通过 Result/Option 强制调用方处理错误，不会出现 Python 中因异常导致订单数据不一致的问题。",
+          "icon": "quality"
+        }
+      ]
+    },
+    {
+      "id": "slide-16",
+      "index": 16,
+      "title": "行业案例：Rust 在关键系统中的应用",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Dropbox 文件存储核心重写",
+          "body": "Dropbox 用 Rust 重写了文件同步引擎，减少了 50% 的服务器数量，节省数亿美元运维成本。",
+          "icon": "cost"
+        },
+        {
+          "title": "Cloudflare 边缘节点高并发处理",
+          "body": "Cloudflare 在每台边缘服务器上用 Rust 处理数百万并发连接，延迟降低 3 倍，稳定性达 99.999%。",
+          "icon": "speed"
+        },
+        {
+          "title": "Discord 实时通信模块",
+          "body": "Discord 用 Rust 重写实时消息网关后，延迟降低 10 倍，同时支撑了 5 亿用户同时在线。",
+          "icon": "growth"
+        }
+      ]
+    },
+    {
+      "id": "slide-17",
+      "index": 17,
+      "title": "Rust 是订单系统的理想选择",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "Rust 的性能与安全完美匹配订单系统高并发、低延迟、强一致的核心需求。",
+      "support": "实测订单查询延迟降低 25 倍，内存占用降低 80%，且编译期消除所有内存安全问题，预计运维成本降低 60%。"
+    },
+    {
+      "id": "slide-18",
+      "index": 18,
+      "title": "重写方案与迁移路径",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 4,
+      "subtitle": "先重写最核心的订单处理链路，逐步替换。采用并行运行策略，新旧系统同时运行，预计6个月完成核心功能，12个月完全迁移。"
+    },
+    {
+      "id": "slide-19",
+      "index": 19,
+      "title": "迁移步骤概览",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "process",
+      "steps": [
+        {
+          "title": "第1-2个月：基建搭建",
+          "desc": "完成Rust项目脚手架、CI/CD流水线、核心库选型（Tokio、Actix-web、SQLx），建立编码规范与代码审查流程。"
+        },
+        {
+          "title": "第3-4个月：订单创建与支付回调",
+          "desc": "重写订单创建服务，实现与第三方支付网关的高性能回调接口，通过AB测试验证正确性与吞吐量提升。"
+        },
+        {
+          "title": "第5-6个月：订单查询与退款",
+          "desc": "重写订单查询API（支持复杂筛选与分页）和退款流程，确保数据一致性和事务补偿机制。"
+        },
+        {
+          "title": "第7-12个月：外围功能迁移与下线",
+          "desc": "迁移剩余功能如售后、发票、通知等，进行全量回归测试，将流量100%切换至Rust系统，正式下线Python服务。"
+        }
+      ]
+    },
+    {
+      "id": "slide-20",
+      "index": 20,
+      "title": "如何降低迁移风险",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Strangler Fig模式",
+          "body": "逐步用Rust微服务替换Python模块，每个替换后立即灰度验证，确保1%流量无异常后再逐步增加至100%。",
+          "icon": "process"
+        },
+        {
+          "title": "数据双向同步",
+          "body": "通过Debezium监听数据库变更日志，实现Rust与Python系统的实时双向同步，任意时刻可回滚。",
+          "icon": "data"
+        },
+        {
+          "title": "灰度流量放量",
+          "body": "每个模块先导流1%的线上请求，监控延迟、错误率、业务成功率，确认无误后以10%步进放量至全量。",
+          "icon": "speed"
+        }
+      ]
+    },
+    {
+      "id": "slide-21",
+      "index": 21,
+      "title": "关键里程碑时间表",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "timeline",
+      "events": [
+        {
+          "time": "M2",
+          "title": "订单创建MVP上线",
+          "desc": "完成订单创建核心功能，灰度5%流量，延迟降低至原来的1/5，错误率趋近于零。"
+        },
+        {
+          "time": "M4",
+          "title": "支付回调迁移完成",
+          "desc": "100%支付回调由Rust系统处理，响应时间从200ms降至20ms，双写一致性验证通过。"
+        },
+        {
+          "time": "M6",
+          "title": "核心链路全覆盖",
+          "desc": "订单创建、支付回调、订单查询、退款全部由Rust承载，承担60%总请求量，系统长期稳定。"
+        },
+        {
+          "time": "M12",
+          "title": "Python系统下线",
+          "desc": "所有外围功能迁移完毕，经评审后关闭Python订单服务，资源节省40%服务器成本。"
+        }
+      ]
+    },
+    {
+      "id": "slide-22",
+      "index": 22,
+      "title": "团队准备与学习成本",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "快速上手Rust",
+          "body": "现有Python团队中80%的工程师在1个月内通过内部教程和Code Review能够独立开发Rust功能。",
+          "icon": "team"
+        },
+        {
+          "title": "专家带队",
+          "body": "安排2名资深后端工程师全职主导架构设计，另招聘1名外部Rust专家参与核心库评审与性能调优。",
+          "icon": "growth"
+        },
+        {
+          "title": "培训资源充裕",
+          "body": "提供《Rust程序设计》《Rust实战》等书籍订阅，并每周组织一次Rust技术分享和Pair Programming。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-23",
+      "index": 23,
+      "title": "投入产出与风险控制",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 5,
+      "subtitle": "预估总投入：4人年（约200万人民币），收益：节省服务器成本50%，用户转化提升10%，风险：迁移期间新bug、团队学习负担"
+    },
+    {
+      "id": "slide-24",
+      "index": 24,
+      "title": "成本收益分析",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "data",
+      "metrics": [
+        {
+          "value": "48人月",
+          "label": "开发成本",
+          "delta": "4人×12月"
+        },
+        {
+          "value": "100万/年",
+          "label": "硬件成本节省",
+          "delta": "Rust版服务器数量缩减至Python的1/3"
+        },
+        {
+          "value": "2000万/年",
+          "label": "业务收益",
+          "delta": "超时消除后转化率提升10%"
+        }
+      ],
+      "note": "Rust重写后，服务器数量从30台降至10台，年节省硬件成本约100万；转化率每提升1%贡献约200万年收入。"
+    },
+    {
+      "id": "slide-25",
+      "index": 25,
+      "title": "风险与缓解措施",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "新系统bug",
+          "body": "通过灰度发布逐步放量，配置全链路监控和自动回滚，确保问题影响范围控制在1%流量内。",
+          "icon": "risk"
+        },
+        {
+          "title": "团队不适应",
+          "body": "组织内部Rust培训、每周Code Review，并聘请2名外部Rust专家进行一对一辅导。",
+          "icon": "team"
+        },
+        {
+          "title": "项目延期",
+          "body": "设定每两周一个里程碑，每日站会同步进度，预留20%缓冲时间应对突发问题。",
+          "icon": "time"
+        }
+      ]
+    },
+    {
+      "id": "slide-26",
+      "index": 26,
+      "title": "重写 vs 优化现有Python系统",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "优化Python系统",
+        "points": [
+          "短期修复超时问题，但Python GIL限制无法充分利用多核，天花板明显。",
+          "长期维护成本逐年上升，每季度因性能问题导致约5次线上事故。",
+          "3年TCO包括服务器扩容、事故处理人力约300万元。"
+        ]
+      },
+      "right": {
+        "heading": "重写为Rust系统",
+        "points": [
+          "前期投入4人年约200万元，但一次投入，长期受益。",
+          "Rust无GC、零开销抽象，吞吐量提升10倍，满足未来3年增长。",
+          "3年TCO包括开发、运维约120万元，比优化方案低40%。"
+        ]
+      }
+    },
+    {
+      "id": "slide-27",
+      "index": 27,
+      "title": "ROI 预估总结",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "投资回收期",
+          "body": "约12个月，即投入200万后第一年内即可通过节省硬件和转化提升收回成本。",
+          "icon": "time"
+        },
+        {
+          "title": "3年净现值",
+          "body": "约5000万，基于年营收增长2000万、硬件节省100万、折现率10%计算得出。",
+          "icon": "growth"
+        },
+        {
+          "title": "非财务收益",
+          "body": "技术栈现代化，团队掌握Rust技能，吸引优秀工程师，降低招聘成本。",
+          "icon": "team"
+        }
+      ]
+    },
+    {
+      "id": "slide-28",
+      "index": 28,
+      "title": "行动建议与下一步",
+      "speaker_notes": "本章我们将聚焦于如何将 Rust 重写订单系统的计划落地。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "section",
+      "section_number": 4,
+      "subtitle": "如何从现在开始，将 Rust 重写计划变为现实？"
+    },
+    {
+      "id": "slide-29",
+      "index": 29,
+      "title": "下一步具体行动",
+      "speaker_notes": "我们制定了清晰的时间表，确保快速推进。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "本周：技术选型确认与内部培训",
+          "body": "确定 Rust 框架（Actix-web vs Axum）、数据库驱动、序列化库，并组织两场 Rust 速成培训覆盖核心团队成员。",
+          "icon": "time"
+        },
+        {
+          "title": "2周内：完成POC并验证订单创建场景",
+          "body": "用 Rust 实现订单创建 API 的原型，在500并发下测试延迟，对比现有Java服务请求耗时。",
+          "icon": "speed"
+        },
+        {
+          "title": "1个月内：提交项目计划书与预算审批",
+          "body": "输出详细实施路线图、风险预案、资源需求，申请200万预算及4个HC正式启动项目。",
+          "icon": "goal"
+        }
+      ]
+    },
+    {
+      "id": "slide-30",
+      "index": 30,
+      "title": "需要您支持的事项",
+      "speaker_notes": "要顺利推进，我们需要您的决策和资源。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "批准4个HC",
+          "body": "新增3名后端开发工程师和1名资深Rust专家，补齐团队能力短板，确保6个月内完成核心模块重写。",
+          "icon": "team"
+        },
+        {
+          "title": "授权200万预算",
+          "body": "覆盖开发阶段的人力成本、云资源（用于灰度测试）、外部咨询及培训费用。",
+          "icon": "cost"
+        },
+        {
+          "title": "协调跨部门配合灰度测试",
+          "body": "请销售、客服团队配合在低峰期进行10%流量切量，并建立快速反馈通道，如专属钉钉群。",
+          "icon": "process"
+        }
+      ]
+    },
+    {
+      "id": "slide-31",
+      "index": 31,
+      "title": "谢谢！",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "closing",
+      "subtitle": "我们准备好了，期待您的决策",
+      "cta": "任何问题欢迎随时交流，一起打造更可靠的技术底座"
+    }
+  ]
+}

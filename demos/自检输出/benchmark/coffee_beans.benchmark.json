@@ -1,0 +1,67 @@
+{
+  "deck_id": "deck-255cc6b0",
+  "slide_count": 29,
+  "llm_calls": [
+    {
+      "step": "plan",
+      "model": "deepseek-chat",
+      "input_tokens": 1917,
+      "output_tokens": 3165,
+      "cost_usd": 0.00399909,
+      "latency_ms": 29933.53150697658
+    },
+    {
+      "step": "compose",
+      "model": "deepseek-chat",
+      "input_tokens": 4983,
+      "output_tokens": 619,
+      "cost_usd": 0.00202631,
+      "latency_ms": 4996.508344018366
+    },
+    {
+      "step": "compose",
+      "model": "deepseek-chat",
+      "input_tokens": 5060,
+      "output_tokens": 930,
+      "cost_usd": 0.0023892,
+      "latency_ms": 8716.278066975065
+    },
+    {
+      "step": "compose",
+      "model": "deepseek-chat",
+      "input_tokens": 5079,
+      "output_tokens": 946,
+      "cost_usd": 0.00241193,
+      "latency_ms": 8276.097578986082
+    },
+    {
+      "step": "compose",
+      "model": "deepseek-chat",
+      "input_tokens": 5104,
+      "output_tokens": 1230,
+      "cost_usd": 0.0027310800000000003,
+      "latency_ms": 11651.093844964635
+    },
+    {
+      "step": "compose",
+      "model": "deepseek-chat",
+      "input_tokens": 5038,
+      "output_tokens": 923,
+      "cost_usd": 0.00237556,
+      "latency_ms": 8110.070052032825
+    },
+    {
+      "step": "compose",
+      "model": "deepseek-chat",
+      "input_tokens": 5035,
+      "output_tokens": 738,
+      "cost_usd": 0.0021712500000000004,
+      "latency_ms": 7152.216932037845
+    }
+  ],
+  "total_cost_usd": 0.018104420000000003,
+  "total_llm_latency_ms": 78835.7963259914,
+  "wall_clock_ms": 79164.97109399643,
+  "render_ms": 234.52163295587525,
+  "degraded": false
+}

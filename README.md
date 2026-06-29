@@ -94,32 +94,32 @@ make cli IN=examples/kyoto_weekend.json OUT=out.pptx                    # Makefi
 
 ## 📂 Demo：预生成样例（直接打开看效果）
 
-> ✅ **看效果的基准就是这个目录：`demos/`** —— 这 5 套是**实际跑通、人工验证过**的真实产出（deepseek-chat，`degraded=false`，非 mock 占位）。其它生成方式（默认 `make demo` 走 mock）只作功能演示，覆盖了无妨，**一切以本目录这套为准**。
+> ✅ **看效果就打开这个冻结目录：`demos/自检输出/`** —— 作者本机用 deepseek-chat 实跑的「自检输出」（`degraded=false`，非 mock 占位）。**`make demo` 等重新生成不会写它**，所以无论将来生成成功与否、效果如何波动，这里始终是一套可回看、可对比的真本。说明见 [`demos/自检输出/README.md`](demos/自检输出/README.md)。
 
 clone 仓库后**无需联网、无需 key** 即可直接打开。
 
-### 打开路径：`demos/pptx/`
+### 打开路径：`demos/自检输出/pptx/`
 
 直接双击，用 PowerPoint / Keynote / WPS 打开：
 
 | 文件 | 主题 | 类型 |
 |---|---|---|
-| `demos/pptx/Python入门30分钟.pptx` | Python 入门 30 分钟 | 教学 |
-| `demos/pptx/年度复盘.pptx` | 2025 我的年度复盘 | 复盘 |
-| `demos/pptx/如何挑选咖啡豆.pptx` | 如何挑选咖啡豆 | 教学 |
-| `demos/pptx/Rust重写订单系统.pptx` | Rust 重写订单系统 | 技术汇报 |
-| `demos/pptx/周末玩遍京都.pptx` | 周末两天玩遍京都 | 旅行 |
+| `demos/自检输出/pptx/Python入门30分钟.pptx` | Python 入门 30 分钟 | 教学 |
+| `demos/自检输出/pptx/年度复盘.pptx` | 2025 我的年度复盘 | 复盘 |
+| `demos/自检输出/pptx/如何挑选咖啡豆.pptx` | 如何挑选咖啡豆 | 教学 |
+| `demos/自检输出/pptx/Rust重写订单系统.pptx` | Rust 重写订单系统 | 技术汇报 |
+| `demos/自检输出/pptx/周末玩遍京都.pptx` | 周末两天玩遍京都 | 旅行 |
 
-> 例：clone 到本地后，演示稿就在 `<仓库目录>/demos/pptx/年度复盘.pptx`。
+> 例：clone 到本地后，演示稿就在 `<仓库目录>/demos/自检输出/pptx/年度复盘.pptx`。
 
-### 配套技术产物
+### 配套技术产物（同在 `demos/自检输出/`）
 
-另两个目录按输入名 `examples/<slug>` 命名，与上面的 pptx 一一对应：
+与上面的 pptx 一一对应，按输入名 `examples/<slug>` 命名：
 
-- `demos/specs/<slug>.deck.json` —— 每套的结构化 `DeckSpec`（LLM 产出的中间规格，可被 `revise` 复用）。
-- `demos/benchmark/<slug>.benchmark.json` —— 每套的成本 / 时延 / 页数实测原始数据。
+- `demos/自检输出/specs/<slug>.deck.json` —— 每套的结构化 `DeckSpec`（可被 `revise` 复用）。
+- `demos/自检输出/benchmark/<slug>.benchmark.json` —— 每套的成本 / 时延 / 页数实测数据。
 
-> 想自己重新生成：`make demo PROVIDER=deepseek`（需先配 `DEEPSEEK_API_KEY`），会覆盖 `demos/pptx/` 下的同名文件。
+> `demos/pptx`、`demos/specs`、`demos/benchmark` 是 `make demo` 的**重新生成目录**（会被覆盖）；要看作者基准，始终以 `demos/自检输出/` 为准。
 
 ---
 
@@ -145,7 +145,8 @@ input.json
 | `cli.py` | CLI 适配器（单命令吃 JSON 吐 PPTX） |
 | `templates/` `assets/` | 预设主题 / 素材库 |
 | `examples/` | 5 套公开输入 JSON |
-| `demos/` | 上述 5 套对应的真实产出：`pptx/`（中文名样例）+ `specs/` + `benchmark/` |
+| `demos/自检输出/` | 作者实跑的「自检输出」冻结基准（pptx 中文名 + specs + benchmark），重新生成不覆盖——**看这个** |
+| `demos/pptx·specs·benchmark/` | `make demo` 的重新生成目录（可被覆盖） |
 | `docs/` | 设计文档 |
 
 ## ✅ 工程质量

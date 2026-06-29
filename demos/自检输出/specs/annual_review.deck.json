@@ -1,0 +1,670 @@
+{
+  "schema_version": "1.0",
+  "id": "deck-b0cdbce0",
+  "title": "2025 我的年度复盘",
+  "topic": "2025 我的年度复盘",
+  "brief": "这一年我做的几件主要的事、踩过的几个坑、明年想试的方向",
+  "audience": "朋友圈分享",
+  "purpose": "以轻松、真诚的叙事，向朋友圈好友分享2025年的关键经历、教训与新年计划，引发共鸣与互动。",
+  "deck_type": "review",
+  "narrative": {
+    "hook": "2025年过得真快，翻开相册，发现这一年我竟然做了这么多事……",
+    "conflict": "但也不是一帆风顺，有几个坑差点让我爬不出来。",
+    "progression": [
+      "先说说那些让我骄傲的事：工作突破、新技能、旅行体验。",
+      "再聊聊那些让我崩溃的坑：决策失误、时间管理失败。",
+      "然后看看我自己的变化：心态更稳了，习惯更好了。",
+      "用一些数据做个回顾：读了30本书，去了5个城市。",
+      "最后聊聊明年想试的新方向：自由职业、运动挑战、学习计划。"
+    ],
+    "resolution": "无论好坏，2025都过去了，带着这些经验，2026我准备好了！"
+  },
+  "theme": {
+    "id": "review_warm",
+    "name": "Review Warm",
+    "mood": [
+      "warm",
+      "reflective",
+      "cozy",
+      "nostalgic"
+    ],
+    "palette": {
+      "primary": "#9a6a4f",
+      "secondary": "#7c5240",
+      "accent": "#3f6b52",
+      "background": "#fbf6ee",
+      "surface": "#f3ead9",
+      "text": "#2b2018",
+      "text_muted": "#7a6a58",
+      "border": "#e7d8c2"
+    },
+    "fonts": {
+      "heading": "Noto Sans CJK SC",
+      "body": "Noto Sans CJK SC"
+    },
+    "type_scale": {
+      "display": 54.0,
+      "h1": 36.0,
+      "h2": 24.0,
+      "body": 16.0,
+      "caption": 12.0,
+      "line_height": 1.25
+    },
+    "spacing": {
+      "unit": 0.012,
+      "xs": 0.012,
+      "s": 0.024,
+      "m": 0.04,
+      "l": 0.064,
+      "xl": 0.096
+    },
+    "grid": {
+      "columns": 12,
+      "margin": 0.06,
+      "gutter": 0.02
+    },
+    "shape_style": "rounded",
+    "background_style": "solid",
+    "footer_style": "minimal"
+  },
+  "slides": [
+    {
+      "id": "slide-0",
+      "index": 0,
+      "title": "2025 我的年度复盘",
+      "speaker_notes": "开场白：翻相册时发现这一年做了好多事，有激动也有遗憾，但都是成长。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "cover",
+      "subtitle": "这一年，我做了几件大事，踩了几个坑，也学到了很多。明年，我想试试新方向。",
+      "kicker": "Year in Review"
+    },
+    {
+      "id": "slide-1",
+      "index": 1,
+      "title": "今天晚上聊什么",
+      "speaker_notes": "今晚的五个部分，从成就到教训，再到未来计划。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "agenda",
+      "items": [
+        "年度高光：我的几件大事",
+        "踩过的坑：那些教训与成长",
+        "我的变化：生活与心态的迭代",
+        "数据回顾：这一年的数字记录",
+        "2026 方向：我想尝试的新赛道"
+      ]
+    },
+    {
+      "id": "slide-2",
+      "index": 2,
+      "title": "总结：2025，谢谢你",
+      "speaker_notes": "总结2025，感恩所有经历，带着教训和成长走向2026。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "summary",
+      "points": [
+        "高光与低谷都是礼物，每一次经历都塑造了现在的我。",
+        "每个教训都让我更聪明，比如那次项目延期让我学会了提前规划。",
+        "每一份努力都算数，慢一点也没关系，重要的是持续前进。"
+      ]
+    },
+    {
+      "id": "slide-3",
+      "index": 3,
+      "title": "01 年度高光：我的几件大事",
+      "speaker_notes": "回顾2025，聚焦那些最闪光的时刻。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "section",
+      "section_number": 1,
+      "subtitle": "今年哪几件事让我最有成就感？这些经历如何改变了我？"
+    },
+    {
+      "id": "slide-4",
+      "index": 4,
+      "title": "工作上的新突破",
+      "speaker_notes": "工作的成长离不开主动学习。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "主导项目提前交付",
+          "body": "作为负责人从策划到上线仅用4个月，比计划提前2周，得到客户好评。",
+          "icon": "launch"
+        },
+        {
+          "title": "获得年度最佳员工提名",
+          "body": "全公司只有5人入围，我凭借跨部门协作贡献脱颖而出。",
+          "icon": "growth"
+        },
+        {
+          "title": "学习AI工具提升效率30%",
+          "body": "将ChatGPT和Midjourney融入日常，报告撰写时间缩短一半。",
+          "icon": "speed"
+        }
+      ]
+    },
+    {
+      "id": "slide-5",
+      "index": 5,
+      "title": "个人技能大升级",
+      "speaker_notes": "技能投资是最划算的自我增值。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "考取PMP证书",
+          "body": "经过3个月系统备考，一次性通过认证，项目管理能力获国际认可。",
+          "icon": "goal"
+        },
+        {
+          "title": "Python写出第一个小工具",
+          "body": "自动化处理Excel数据，帮部门每月节省10小时手工操作。",
+          "icon": "tech"
+        },
+        {
+          "title": "英语打卡200天看懂生肉剧",
+          "body": "每天15分钟听力练习，现已能无字幕观看《老友记》全季。",
+          "icon": "growth"
+        }
+      ]
+    },
+    {
+      "id": "slide-6",
+      "index": 6,
+      "title": "旅行与探索",
+      "speaker_notes": "旅行让我走出舒适圈，收获勇气。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "大理环洱海骑行",
+          "body": "用两天时间骑行120公里，沿途邂逅古城、田野和日落，彻底放空。",
+          "icon": "idea"
+        },
+        {
+          "title": "一个人背包去泰国",
+          "body": "在曼谷青旅结交了3位外国朋友，一同逛夜市、学做泰菜。",
+          "icon": "team"
+        },
+        {
+          "title": "解锁潜水技能",
+          "body": "在涛岛考取OW潜水证，下潜18米看到珊瑚和鱼群，打开了新世界。",
+          "icon": "risk"
+        }
+      ]
+    },
+    {
+      "id": "slide-7",
+      "index": 7,
+      "title": "关键感悟：主动才有故事",
+      "speaker_notes": "希望2026年继续保持主动的姿态。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "high",
+      "type": "big_idea",
+      "statement": "很多机会都是自己争取来的，尝试新事物才会有惊喜，别等万事俱备，先行动再完善。",
+      "support": "统计2025年我主动申请的5件事，件件都带来了意想不到的回报，成功率100%。"
+    },
+    {
+      "id": "slide-8",
+      "index": 8,
+      "title": "踩过的坑：那些教训与成长",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 2,
+      "subtitle": "今年有哪些失误？从中学到了什么经验？"
+    },
+    {
+      "id": "slide-9",
+      "index": 9,
+      "title": "时间管理的溃败",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "同时接两个兼职，两边都垮",
+          "body": "两头赶工导致交付质量下降，客户不满，最终两个项目都提前终止。",
+          "icon": "time"
+        },
+        {
+          "title": "熬夜赶工，效率低下",
+          "body": "连续三周每天只睡5小时，产出反而比正常工作时少30%。",
+          "icon": "speed"
+        },
+        {
+          "title": "教训：专注是效率的基石",
+          "body": "单一任务时的完成速度比多任务并行快50%，且错误率降低70%。",
+          "icon": "goal"
+        }
+      ]
+    },
+    {
+      "id": "slide-10",
+      "index": 10,
+      "title": "一次冲动的投资",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "跟风买入，亏损20%",
+          "body": "仅凭某大V推荐就投入3万元，两周内缩水至2.4万。",
+          "icon": "risk"
+        },
+        {
+          "title": "信息不足，盲目决策",
+          "body": "未查看公司财报和行业动态，只看了KOL的片面分析。",
+          "icon": "data"
+        },
+        {
+          "title": "教训：独立研究胜过大佬推荐",
+          "body": "严格执行投资清单：至少阅读3份财报、1份行业报告后再决策。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-11",
+      "index": 11,
+      "title": "忽视健康的代价",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "连续3个月不运动，体重涨5kg",
+          "body": "从67kg升到72kg，体脂率从18%飙升到24%。",
+          "icon": "cost"
+        },
+        {
+          "title": "颈椎问题找上门",
+          "body": "体检显示颈椎曲度变直，每周需理疗两次，已花费2000元。",
+          "icon": "risk"
+        },
+        {
+          "title": "教训：健康是1，其他是0",
+          "body": "每天30分钟运动，午间10分钟拉伸，颈椎症状已缓解80%。",
+          "icon": "growth"
+        }
+      ]
+    },
+    {
+      "id": "slide-12",
+      "index": 12,
+      "title": "核心教训：慢就是快",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "追求数量反而离目标更远，慢下来专注质量才是最快的路径。",
+      "support": "过去半年，坚持“每日三件事”而非十件事，完成率从40%提升至85%。"
+    },
+    {
+      "id": "slide-13",
+      "index": 13,
+      "title": "我的变化：生活与心态的迭代",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 3,
+      "subtitle": "这一年我有哪些内在变化？这些变化如何影响日常生活？"
+    },
+    {
+      "id": "slide-14",
+      "index": 14,
+      "title": "年初 vs 年末：我的心态对比",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "comparison",
+      "left": {
+        "heading": "年初状态",
+        "points": [
+          "经常为未来焦虑，晚上失眠，担心工作没做好",
+          "讨好型社交，参加不喜欢的饭局，怕得罪人",
+          "目标模糊，知道要努力但不知道具体做什么"
+        ]
+      },
+      "right": {
+        "heading": "年末状态",
+        "points": [
+          "平静接受不确定性，专注当下能控制的事情",
+          "主动筛选圈子，只和正能量的人深交，断了3个消耗型关系",
+          "制定年度OKR，拆解成季度目标，每天有清晰任务"
+        ]
+      }
+    },
+    {
+      "id": "slide-15",
+      "index": 15,
+      "title": "生活的微习惯清单",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "晨起一杯水",
+          "body": "每天起床后先喝一杯温水，坚持200天，肠胃改善明显，不再便秘。",
+          "icon": "health"
+        },
+        {
+          "title": "感恩日记",
+          "body": "睡前写3件感恩的事，小到今天阳光很好，心态从抱怨转向知足。",
+          "icon": "mood"
+        },
+        {
+          "title": "断网散步",
+          "body": "每周一次不带手机去公园走30分钟，发现以前忽略的鸟叫和花开。",
+          "icon": "nature"
+        }
+      ]
+    },
+    {
+      "id": "slide-16",
+      "index": 16,
+      "title": "阅读与输入",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "30本书单",
+          "body": "今年读了30本书，最爱《原子习惯》，并用其中方法建立了早起习惯。",
+          "icon": "education"
+        },
+        {
+          "title": "通勤学习",
+          "body": "订阅5个优质播客（如《忽左忽右》），每天通勤1小时变成学习时间。",
+          "icon": "podcasts"
+        },
+        {
+          "title": "读书笔记",
+          "body": "开始写读书笔记，哪怕只写一句话，累计30篇，加深了理解。",
+          "icon": "edit"
+        }
+      ]
+    },
+    {
+      "id": "slide-17",
+      "index": 17,
+      "title": "最大的变化：我开始做减法",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "少即是多：割舍90%的无用，才能聚焦10%的真正重要。",
+      "support": "断舍离后，房间物品减少40%，每天找东西时间从15分钟降到3分钟。"
+    },
+    {
+      "id": "slide-18",
+      "index": 18,
+      "title": "04 数据回顾：这一年的数字记录",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 4,
+      "subtitle": "用数据量化我的2025，看看哪些数字让我惊喜或反思"
+    },
+    {
+      "id": "slide-19",
+      "index": 19,
+      "title": "工作与学习数据",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "data",
+      "metrics": [
+        {
+          "value": "12",
+          "label": "完成项目",
+          "delta": "目标10个，超额20%"
+        },
+        {
+          "value": "3",
+          "label": "新学软件",
+          "delta": "Figma、Python、Notion"
+        },
+        {
+          "value": "20",
+          "label": "加班天数",
+          "delta": "比去年少15天，效率提升"
+        }
+      ],
+      "note": "项目完成数创近三年新高，加班却减少了，说明工作方法有改进。"
+    },
+    {
+      "id": "slide-20",
+      "index": 20,
+      "title": "生活与健康数据",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "data",
+      "metrics": [
+        {
+          "value": "100",
+          "label": "运动次数",
+          "delta": "跑步60次，健身40次"
+        },
+        {
+          "value": "7/2",
+          "label": "体检指标",
+          "delta": "7项正常，2项待改善（血脂、视力）"
+        },
+        {
+          "value": "6.5h",
+          "label": "平均睡眠",
+          "delta": "目标7h，差0.5h需调整作息"
+        }
+      ],
+      "note": "运动习惯已养成，但睡眠仍需优化，2026重点改善。"
+    },
+    {
+      "id": "slide-21",
+      "index": 21,
+      "title": "社交与娱乐数据",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "data",
+      "metrics": [
+        {
+          "value": "15",
+          "label": "新朋友",
+          "delta": "其中3人成为深交好友"
+        },
+        {
+          "value": "40",
+          "label": "影视剧集",
+          "delta": "看完40部，包括25部电影、15部剧"
+        },
+        {
+          "value": "15天",
+          "label": "旅行天数",
+          "delta": "走过3个国家：日本、泰国、新加坡"
+        }
+      ],
+      "note": "社交圈扩大，旅行见闻丰富，2026想挑战更多目的地。"
+    },
+    {
+      "id": "slide-22",
+      "index": 22,
+      "title": "我的年度榜单",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "最佳书籍",
+          "body": "《原子习惯》让我明白了微小的改变如何带来巨大复利，推荐给所有想提升自我的人。",
+          "icon": "idea"
+        },
+        {
+          "title": "最佳电影",
+          "body": "《心灵奇旅》用温暖的故事提醒我珍惜当下的火花，而不是一味追求目标。",
+          "icon": "idea"
+        },
+        {
+          "title": "最佳播客",
+          "body": "《得意忘形》每期都充满启发，尤其关于如何面对不确定性的讨论让我豁然开朗。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-23",
+      "index": 23,
+      "title": "2026 方向：我想尝试的新赛道",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "section",
+      "section_number": 5,
+      "subtitle": "明年我有哪些新想法？准备如何迈出第一步？"
+    },
+    {
+      "id": "slide-24",
+      "index": 24,
+      "title": "职业新尝试：自由职业",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "接咨询单试水",
+          "body": "利用周末接3-5个咨询单，积累案例和口碑，了解市场需求。",
+          "icon": "idea"
+        },
+        {
+          "title": "建立个人网站",
+          "body": "用WordPress搭建作品集网站，展示过往项目与客户评价。",
+          "icon": "launch"
+        },
+        {
+          "title": "副业覆盖开销",
+          "body": "目标每月副业收入达到5000元，覆盖房租和日常饮食。",
+          "icon": "cost"
+        }
+      ]
+    },
+    {
+      "id": "slide-25",
+      "index": 25,
+      "title": "运动新目标：完成半马",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "每周3次5公里",
+          "body": "周一、三、五下班后跑步，配速从7分逐步提升到6分。",
+          "icon": "time"
+        },
+        {
+          "title": "报名3月马拉松",
+          "body": "选择当地小型半马，报名费约150元，提前2个月备赛。",
+          "icon": "goal"
+        },
+        {
+          "title": "加入跑团互督",
+          "body": "在Keep上加入城市跑团，每周六集体LSD训练。",
+          "icon": "team"
+        }
+      ]
+    },
+    {
+      "id": "slide-26",
+      "index": 26,
+      "title": "学习新计划：学会视频剪辑",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "每天学半小时",
+          "body": "跟着B站「影视飓风」教程，从Pr基础操作学起。",
+          "icon": "growth"
+        },
+        {
+          "title": "每月产出一条vlog",
+          "body": "记录生活或学习过程，发布到小红书积累作品。",
+          "icon": "quality"
+        },
+        {
+          "title": "年底接简单商单",
+          "body": "目标单价300-500元，剪辑5分钟内短视频。",
+          "icon": "idea"
+        }
+      ]
+    },
+    {
+      "id": "slide-27",
+      "index": 27,
+      "title": "明年关键词：尝试与积累",
+      "speaker_notes": null,
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "big_idea",
+      "statement": "不追求完美，先完成再完美。",
+      "support": "每天进步1%，一年后能力提升37.8倍（1.01^365 ≈ 37.8）。"
+    },
+    {
+      "id": "slide-28",
+      "index": 28,
+      "title": "2026，一起加油！",
+      "speaker_notes": "感谢大家听我复盘，期待明年一起进步。",
+      "layout_id": null,
+      "asset_hint": null,
+      "emphasis": "normal",
+      "type": "closing",
+      "subtitle": "新的一年，继续互相鼓励，分享成长。",
+      "cta": "如果你也有年度日记，欢迎分享交流；明年今天，再来看复盘对比！"
+    }
+  ]
+}
