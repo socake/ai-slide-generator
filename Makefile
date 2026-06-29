@@ -39,8 +39,9 @@ cli:
 # 复现真实数据: make demo PROVIDER=deepseek  (需先配 key)
 PROVIDER ?= mock
 demo:
-	@for f in python_intro annual_review coffee_beans rust_order_system kyoto_weekend; do \
-		$(PYTHON) cli.py generate examples/$$f.json demos/pptx/$$f.pptx \
+	@for pair in "python_intro:Python入门30分钟" "annual_review:年度复盘" "coffee_beans:如何挑选咖啡豆" "rust_order_system:Rust重写订单系统" "kyoto_weekend:周末玩遍京都"; do \
+		f=$${pair%%:*}; name=$${pair##*:}; \
+		$(PYTHON) cli.py generate examples/$$f.json "demos/pptx/$$name.pptx" \
 			--spec-out demos/specs/$$f.deck.json \
 			--benchmark-out demos/benchmark/$$f.benchmark.json \
 			--provider $(PROVIDER) ; \
